@@ -1,14 +1,17 @@
 # main links links
 main:
-  - title: "Publications"
+  - title: "Pyspark"
     url: /publications/
 
 
-  - title: "Teaching"
+  - title: "xgboost"
     url: /teaching/    
         
-  - title: "Blog Posts"
+  - title: "lightGBM"
     url: /year-archive/
     
-  - title: "Guide"
+  - title: "机器学习"
     url: /markdown/
+
+  - title: "机器学习"
+    url: /pages/
