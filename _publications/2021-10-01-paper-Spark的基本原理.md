@@ -1,7 +1,7 @@
 ---
 title: "Spark的基本原理"
 collection: publications
-permalink: /publication/2009-10-01-Spark的基本原理
+permalink: /publication/2021-10-01-Spark的基本原理
 excerpt: 'Spark，是一种"One Stack to rule them all"的大数据计算框架，期望使用一个技术堆栈就完美地解决大数据领域的各种计算任务。Apache官方，对Spark的定义就是：通用的大数据快速处理引擎'
 date: 2021-10-01
 venue: 'Journal 1'
@@ -46,7 +46,6 @@ Spark提供了统一的解决方案。Spark可以用于批处理、交互式查�
 Spark能够跟很多开源工程兼容使用。如Spark可以使用Hadoop的YARN和Apache Mesos作为它的资源管理和调度器，并且Spark可以读取多种数据源，如HDFS、HBase、MySQL等。
 
 ![](./data/spark主要特点.png)
-
 
 <!-- #endregion -->
 
@@ -94,8 +93,6 @@ Spark集群由Driver, Cluster Manager（Standalone,Yarn 或 Mesos），以及Wor
 对于pyspark,为了不破坏Spark已有的运行时架构，Spark在外围包装一层Python API。在Driver端，借助Py4j实现Python和Java的交互，进而实现通过Python编写Spark应用程序。在Executor端，则不需要借助Py4j，因为Executor端运行的Task逻辑是由Driver发过来的，那是序列化后的字节码。
 
 ![](./data/pyspark架构设计.png)
-
-
 
 <!-- #endregion -->
 
@@ -193,7 +190,6 @@ RDD之间的依赖关系形成一个DAG有向无环图，DAG会提交给DAGSched
 
 ```python
 import findspark
-
 #指定spark_home为刚才的解压路径,指定python路径
 spark_home = "/Users/liangyun/ProgramFiles/spark-3.0.1-bin-hadoop3.2"
 python_path = "/Users/liangyun/anaconda3/bin/python"
