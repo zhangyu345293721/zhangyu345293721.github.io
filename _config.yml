@@ -25,7 +25,7 @@ author:
   name             : "章鱼哥"
   bio              : "有志者事竟成"
   location         : "湖北-武汉市"
-  blog              :  "https://blog.csdn.net/zy345293721?type=blog"
+  blog             : "https://blog.csdn.net/zy345293721?type=blog"
   email            : "zhangyuyu417@gmail.com" 
 
   # Academic websites
@@ -40,8 +40,8 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
+  github           : "zhangyuyu417"
+  # kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
