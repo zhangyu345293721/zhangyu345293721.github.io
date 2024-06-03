@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "菜鸟章鱼哥"
+title                    : "菜鸟octopus"
 title_separator          : "-"
 name                     : &name "zhangyu"
 description              : &description "有志者事竟成"
