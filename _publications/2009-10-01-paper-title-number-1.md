@@ -13,7 +13,7 @@ paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 
 
 <!-- #region -->
-#### 一，Spark优势特点
+## 一，Spark优势特点
 
 作为大数据计算框架MapReduce的继任者，Spark具备以下优势特性。
 
@@ -53,7 +53,7 @@ Spark能够跟很多开源工程兼容使用。如Spark可以使用Hadoop的YARN
 <!-- #endregion -->
 
 <!-- #region -->
-#### 二，Spark基本概念
+## 二，Spark基本概念
 
 <br/>
 
@@ -86,7 +86,7 @@ Task：任务，运行在Executor上的工作单元，是Executor中的一个线
 
 
 <!-- #region -->
-#### 三，Spark架构设计
+## 三，Spark架构设计
 
 Spark集群由Driver, Cluster Manager（Standalone,Yarn 或 Mesos），以及Worker Node组成。对于每个Spark应用程序，Worker Node上存在一个Executor进程，Executor进程中包括多个Task线程。
 
@@ -104,7 +104,7 @@ Spark集群由Driver, Cluster Manager（Standalone,Yarn 或 Mesos），以及Wor
 <!-- #region -->
 
 
-#### 四，Spark运行流程
+## 四，Spark运行流程
 
 1，Application首先被Driver构建DAG图并分解成Stage。
 
@@ -129,7 +129,7 @@ Spark集群由Driver, Cluster Manager（Standalone,Yarn 或 Mesos），以及Wor
 ![](./data/spark架构运行特点.png)
 <!-- #endregion -->
 
-#### 五，Spark部署模式
+## 五，Spark部署模式
 
 Local：本地运行模式，非分布式。
 
@@ -142,7 +142,7 @@ Mesos：与Yarn最大的不同是Mesos 的资源分配是二次的，Mesos负责
 ![](./data/hadoop与spark统一部署.png)
 
 
-#### 六，RDD数据结构
+## 六，RDD数据结构
 
 RDD全称Resilient Distributed Dataset，弹性分布式数据集，它是记录的只读分区集合，是Spark的基本数据结构。
 
@@ -195,7 +195,7 @@ RDD之间的依赖关系形成一个DAG有向无环图，DAG会提交给DAGSched
 
 <!-- #endregion -->
 
-#### 七，WordCount范例
+## 七，WordCount范例
 
 ```python
 import findspark
