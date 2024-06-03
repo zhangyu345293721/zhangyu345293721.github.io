@@ -8,10 +8,10 @@ main:
     url: /teaching/    
         
   - title: "Xgboost"
-    url: /year-archive/
+    url: /talks/
     
   - title: "Pytorch"
-    url: /pages/
+    url: /portfolio/
 
   - title: "时间序列论文"
     url: /markdown/
