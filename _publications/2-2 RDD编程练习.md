@@ -5,6 +5,7 @@ permalink: /publication/2-2 RDD编程练习
 excerpt: 'Spark，是一种通用的大数据计算框架，I正如传统大数据技术Hadoop的MapReduce、Hive引擎，以及Storm流式实时计算引擎等，
 Spark包含了大数据领城常见的各种计算框架：比如Spark Core用于离线计算，Spark SQL用于交互式查询，Spark Streaming用于实时流式计算，Spark MILlib用于机器学习，Spark GraphX用于图计算'
 date: 2021-10-01
+venue: 'Journal 1'
 ---
 
 
