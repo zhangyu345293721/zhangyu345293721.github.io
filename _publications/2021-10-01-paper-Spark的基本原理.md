@@ -19,7 +19,7 @@ venue: 'Journal 1'
 
 不同于MapReduce将中间计算结果放入磁盘中，Spark采用内存存储中间计算结果，减少了迭代运算的磁盘IO，并通过并行计算DAG图的优化，减少了不同任务之间的依赖，降低了延迟等待时间。内存计算下，Spark 比 MapReduce 快100倍。
 
-![](./data/spark和hadoop对比.png)
+<br/><img src='/images/spark和hadoop对比.png'>
 
 <br/>
 
@@ -28,7 +28,8 @@ venue: 'Journal 1'
 
 不同于MapReduce仅支持Map和Reduce两种编程算子，Spark提供了超过80种不同的Transformation和Action算子，如map,reduce,filter,groupByKey,sortByKey,foreach等，并且采用函数式编程风格，实现相同的功能需要的代码量极大缩小。
 
-![](./data/mapreduce和spark对比.png)
+<br/><img src='/images/mapreduce和spark对比.png'>
+
 
 
 **3，通用性**
@@ -37,15 +38,15 @@ Spark提供了统一的解决方案。Spark可以用于批处理、交互式查�
 
 这些不同类型的处理都可以在同一个应用中无缝使用。这对于企业应用来说，就可使用一个平台来进行不同的工程实现，减少了人力开发和平台部署成本。
 
-
-![](./data/spark通用性.png)
+<br/><img src='/images/spark通用性.png'>
 
 
 **4，兼容性**
 
 Spark能够跟很多开源工程兼容使用。如Spark可以使用Hadoop的YARN和Apache Mesos作为它的资源管理和调度器，并且Spark可以读取多种数据源，如HDFS、HBase、MySQL等。
 
-![](./data/spark主要特点.png)
+<br/><img src='/images/spark主要特点.png'>
+
 
 <!-- #endregion -->
 
@@ -77,8 +78,8 @@ Task：任务，运行在Executor上的工作单元，是Executor中的一个线
 
 总结：Application由多个Job组成，Job由多个Stage组成，Stage由多个Task组成。Stage是作业调度的基本单位。
 
+<br/><img src='/images/spark基本概念.png'>
 
-![](./data/spark基本概念.png)
 <!-- #endregion -->
 
 
@@ -87,12 +88,14 @@ Task：任务，运行在Executor上的工作单元，是Executor中的一个线
 
 Spark集群由Driver, Cluster Manager（Standalone,Yarn 或 Mesos），以及Worker Node组成。对于每个Spark应用程序，Worker Node上存在一个Executor进程，Executor进程中包括多个Task线程。
 
-![](./data/spark架构设计.png)
+<br/><img src='/images/spark架构设计.png'>
+
 
 
 对于pyspark,为了不破坏Spark已有的运行时架构，Spark在外围包装一层Python API。在Driver端，借助Py4j实现Python和Java的交互，进而实现通过Python编写Spark应用程序。在Executor端，则不需要借助Py4j，因为Executor端运行的Task逻辑是由Driver发过来的，那是序列化后的字节码。
 
-![](./data/pyspark架构设计.png)
+<br/><img src='/images/pyspark架构设计.png'>
+
 
 <!-- #endregion -->
 
@@ -119,9 +122,10 @@ Spark集群由Driver, Cluster Manager（Standalone,Yarn 或 Mesos），以及Wor
 
 9，Work Node对应Executor停止运行。
 
-![](./data/spark任务流程.png)
+<br/><img src='/images/spark任务流程.png'>
 
-![](./data/spark架构运行特点.png)
+<br/><img src='/images/spark架构运行特点.png'>
+
 <!-- #endregion -->
 
 ## 五，Spark部署模式
@@ -134,7 +138,8 @@ Yarn：Haoop集群管理器，部署后可以同时运行MapReduce，Spark，Sto
 
 Mesos：与Yarn最大的不同是Mesos 的资源分配是二次的，Mesos负责分配一次，计算框架可以选择接受或者拒绝。
 
-![](./data/hadoop与spark统一部署.png)
+<br/><img src='/images/hadoop与spark统一部署.png'>
+
 
 
 ## 六，RDD数据结构
@@ -161,7 +166,8 @@ RDD的操作有两种类型，即Transformation操作和Action操作。转换操
 
 Transformation操作都具有 Lazy 特性，即 Spark 不会立刻进行实际的计算，只会记录执行的轨迹，只有触发Action操作的时候，它才会根据 DAG 图真正执行。
 
-![](./data/RDD特性.png)
+<br/><img src='/images/RDD特性.png'>
+
 
 
 操作确定了RDD之间的依赖关系。
@@ -171,7 +177,8 @@ RDD之间的依赖关系有两种类型，即窄依赖和宽依赖。窄依赖�
 宽依赖关系相关的操作一般具有shuffle过程，即通过一个Patitioner函数将父RDD中每个分区上key不同的记录分发到不同的子RDD分区。
 
 
-![](./data/宽依赖窄依赖.png)
+<br/><img src='/images/宽依赖窄依赖.png'>
+
 
 
 依赖关系确定了DAG切分成Stage的方式。
@@ -181,7 +188,8 @@ RDD之间的依赖关系有两种类型，即窄依赖和宽依赖。窄依赖�
 RDD之间的依赖关系形成一个DAG有向无环图，DAG会提交给DAGScheduler，DAGScheduler会把DAG划分成相互依赖的多个stage，划分stage的依据就是RDD之间的宽窄依赖。遇到宽依赖就划分stage,每个stage包含一个或多个task任务。然后将这些task以taskSet的形式提交给TaskScheduler运行。
 
 
-![](./data/Stage切割原理.png)
+<br/><img src='/images/Stage切割原理.png'>
+
 
 <!-- #endregion -->
 
