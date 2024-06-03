@@ -115,10 +115,6 @@ root
  |-- score: long (nullable = true)
 ```
 
-```python
-
-```
-
 **2, 通过createDataFrame方法将Pandas.DataFrame转换成pyspark中的DataFrame**
 
 ```python
@@ -139,10 +135,6 @@ df.show()
 ```
 
 ```python
-
-```
-
-```python
 # 也可以对列表直接转换
 values = [("LiLei",18),("HanMeiMei",17)]
 df = spark.createDataFrame(values,["name","age"])
@@ -156,10 +148,6 @@ df.show()
 |    LiLei| 18|
 |HanMeiMei| 17|
 +---------+---+
-```
-
-```python
-
 ```
 
 **4, 通过createDataFrame方法指定schema动态创建DataFrame**
@@ -195,10 +183,6 @@ dfstudent.show()
 |HanMeiMei|   90|2009-03-01|
 |   DaChui| null|2008-07-02|
 +---------+-----+----------+
-
-```
-
-```python
 
 ```
 
@@ -284,10 +268,6 @@ root
 ```
 
 ```python
-
-```
-
-```python
 #读取parquet文件
 df = spark.read.parquet("data/users.parquet")
 df.show()
@@ -300,11 +280,6 @@ df.show()
 |Alyssa|          null|  [3, 9, 15, 20]|
 |   Ben|           red|              []|
 +------+--------------+----------------+
-
-```
-
-```python
-
 
 ```
 
@@ -376,10 +351,6 @@ df.write.parquet("data/people_write.parquet")
 ```python
 #保存成hive数据表
 df.write.bucketBy(42, "name").sortBy("age").saveAsTable("people_bucketed")
-
-```
-
-```python
 
 ```
 
@@ -498,10 +469,6 @@ df.head(2)
 ```
 [Row(name='LiLei', age=15, gender='male'),
  Row(name='HanMeiMei', age=16, gender='female')]
-
-```
-
-```python
 
 ```
 
@@ -680,10 +647,6 @@ dfexcept.show()
 +-----------+
 |Hello China|
 +-----------+
-```
-
-```python
-
 ```
 
 **3，类Excel操作**
@@ -961,10 +924,6 @@ df_freq.show()
 +-------------+----------------+
 |         [16]|          [male]|
 +-------------+----------------+
-```
-
-```python
-
 ```
 
 **4，类SQL表操作**
@@ -1817,5 +1776,3 @@ dfremain.show()
 +---------+---+------+------+
 ```
 
-```python
-```
