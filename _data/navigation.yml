@@ -16,5 +16,5 @@ main:
   - title: "pytorch"
     url: /pages/
     
- - title: "Pandas"
+  - title: "Pandas"
     url: /talks/
