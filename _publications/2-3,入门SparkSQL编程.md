@@ -1,7 +1,7 @@
 ---
-title: "2-3 Spark的基本原理"
+title: "2.3 入门SparkSQL编程
 collection: publications
-permalink: /publication/2-3,2小时入门SparkSQL编程
+permalink: /publication/2-3,入门SparkSQL编程
 excerpt: 'spark 提供了大量的算子，开发只需调用相关api进行实现无法关注底层的实现原理
 通用的大数据解决方案,相较于以前离线任务采用mapreduce实现，实时任务采用storm实现，目前这些都可以通过spark来实现，降低来开发的成本。同时spark 通过spark SQL降低了用户的学习使用门槛，还提供了机器学习，图计算引擎等
 '
