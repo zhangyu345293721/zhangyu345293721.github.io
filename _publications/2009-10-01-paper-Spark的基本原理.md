@@ -2,8 +2,8 @@
 title: "Spark的基本原理"
 collection: publications
 permalink: /publication/2009-10-01-Spark的基本原理
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
+excerpt: 'Spark，是一种"One Stack to rule them all"的大数据计算框架，期望使用一个技术堆栈就完美地解决大数据领域的各种计算任务。Apache官方，对Spark的定义就是：通用的大数据快速处理引擎'
+date: 2021-10-01
 venue: 'Journal 1'
 ---
 
