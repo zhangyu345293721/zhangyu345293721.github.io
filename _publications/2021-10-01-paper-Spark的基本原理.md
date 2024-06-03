@@ -146,7 +146,6 @@ RDD代表一个不可变、可分区、里面的元素可并行计算的集合�
 一般有两种方式创建RDD，第一种是读取文件中的数据生成RDD，第二种则是通过将内存中的对象并行化得到RDD。
 
 ```python
-
 #通过读取文件生成RDD
 rdd = sc.textFile("hdfs://hans/data_warehouse/test/data")
 
