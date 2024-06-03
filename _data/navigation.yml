@@ -4,17 +4,17 @@ main:
     url: /publications/
 
 
-  - title: "xgboost"
+  - title: "LightGBM"
     url: /teaching/    
         
-  - title: "lightGBM"
+  - title: "Xgboost"
     url: /year-archive/
     
-  - title: "机器学习"
-    url: /markdown/
-
-  - title: "pytorch"
+  - title: "Pytorch"
     url: /pages/
+
+  - title: "时间序列论文"
+    url: /markdown/
     
   - title: "Pandas"
     url: /talks/
