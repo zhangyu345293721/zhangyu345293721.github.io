@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "菜鸟章鱼哥"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -23,7 +23,6 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "章鱼哥"
-  pronouns         : # example: "she/her"  
   bio              : "有志者事竟成"
   location         : "湖北-武汉市"
   uri              : # URL
