@@ -1,4 +1,16 @@
-# 2-3,2小时入门SparkSQL编程
+---
+title: "2-3 Spark的基本原理"
+collection: publications
+permalink: /publication/2-3,2小时入门SparkSQL编程
+excerpt: 'spark 提供了大量的算子，开发只需调用相关api进行实现无法关注底层的实现原理
+通用的大数据解决方案,相较于以前离线任务采用mapreduce实现，实时任务采用storm实现，目前这些都可以通过spark来实现，降低来开发的成本。同时spark 通过spark SQL降低了用户的学习使用门槛，还提供了机器学习，图计算引擎等
+'
+date: 2021-10-01
+venue: 'Journal 1'
+---
+
+
+# 入门SparkSQL编程
 
 
 <!-- #region -->
@@ -1807,16 +1819,4 @@ dfremain.show()
 ```
 
 ```python
-```
-
-**如果本书对你有所帮助，想鼓励一下作者，记得给本项目加一颗星星star⭐️，并分享给你的朋友们喔😊!** 
-
-如果对本书内容理解上有需要进一步和作者交流的地方，欢迎在公众号"算法美食屋"下留言。作者时间和精力有限，会酌情予以回复。
-
-也可以在公众号后台回复关键字：**spark加群**，加入spark和大数据读者交流群和大家讨论。
-
-![image.png](./data/算法美食屋二维码.jpg)
-
-```python
-
 ```
