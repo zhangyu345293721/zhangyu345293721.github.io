@@ -1,7 +1,7 @@
 ---
 title: 'DataFrame—数据处理'
 date: 2022-04-02
-permalink: /posts/DataFrame—数据处理
+permalink: /posts/DataFrame数据处理
 tags:
   - cool posts
   - category1
