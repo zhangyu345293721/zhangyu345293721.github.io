@@ -7,8 +7,6 @@ date: 2021-10-01
 venue: 'Journal 1'
 ---
 
-# 4.1 探索MLlib机器学习
-
 
 
 MLlib是Spark的机器学习库，包括以下主要功能。
