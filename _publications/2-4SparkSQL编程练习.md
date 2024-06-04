@@ -7,7 +7,6 @@ date: 2021-10-01
 venue: 'Journal 1'
 ---
 
-# 2.4 SparkSQL编程练习
 
 为强化SparkSQL编程基本功，现提供一些小练习题。
 
