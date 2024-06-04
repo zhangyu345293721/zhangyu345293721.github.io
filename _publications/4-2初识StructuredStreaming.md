@@ -7,9 +7,6 @@ date: 2021-10-01
 venue: 'Journal 1'
 ---
 
-# 4.2 初识StructuredStreaming
-
-
 
 设想我们要设计一个交易数据展示系统，实时呈现比特币最近1s钟的成交均价。
 
