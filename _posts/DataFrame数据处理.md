@@ -1,11 +1,10 @@
 ---
-title: 'DataFrame—数据处理'
+title: "DataFrame—数据处理"
+collection: posts
+permalink: /post/DataFrame数据处理
+excerpt: '数据处理'
 date: 2022-04-02
-permalink: /posts/DataFrame数据处理
-tags:
-  - cool posts
-  - category1
-  - category2
+venue: 'Journal 1'
 ---
 
 导入pandas和numpy
