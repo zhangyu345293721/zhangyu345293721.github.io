@@ -9,8 +9,6 @@ venue: 'Journal 1'
 ---
 
 
-# 入门SparkSQL编程
-
 
 <!-- #region -->
 本节将介绍SparkSQL编程基本概念和基本用法。
