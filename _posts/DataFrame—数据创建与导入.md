@@ -1,6 +1,6 @@
 ---
 title: 'DataFrame—数据创建与导入'
-date: 2012-08-14
+date: 2022-04-01
 permalink: /posts/DataFrame—数据创建与导入
 tags:
   - cool posts
