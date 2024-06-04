@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "菜鸟octopus"
+title                    : "dddddd"
 title_separator          : "-"
 name                     : &name "zhangyu"
 description              : &description "我是Octopus，这个名字来源于我的中文名--章鱼；我热爱编程、热爱算法、热爱开源。所有源码在我的个人github ；这博客是记录我学习的点点滴滴，如果您对 Python、Java、AI、算法有兴趣，可以关注我的动态，一起学习，共同进步"
@@ -22,9 +22,9 @@ repository               : "zhangyu345293721/zhangyu345293721.github.io"
 author:
   # Biographic information
   avatar           : "profile_2.png"
-  name             : "章鱼哥"
+  name             : "ddddd"
   bio              : "我是Octopus，这个名字来源于我的中文名--章鱼；我热爱编程、热爱算法、热爱开源。所有源码在我的个人github ；这博客是记录我学习的点点滴滴，如果您对 Python、Java、AI、算法有兴趣，可以关注我的动态，一起学习，共同进步"
-  location         : "上海市"
+  location         : "上海ddddd市"
   blog             : "https://blog.csdn.net/zy345293721?type=blog"
   email            : "zhangyuyu417@gmail.com" 
 
