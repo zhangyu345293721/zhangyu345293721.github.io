@@ -54,9 +54,6 @@ spark = SparkSession.builder \
 sc = spark.sparkContext
 ```
 
-```python
-
-```
 
 ### 一，Spark调优原理
 
@@ -126,9 +123,7 @@ $$ 堆内内存 ≈ storage内存+execution内存+other内存 $$
 
 <!-- #endregion -->
 
-```python
 
-```
 
 ### 二，Spark任务UI监控
 
@@ -181,9 +176,6 @@ SQL:
 
 <!-- #endregion -->
 
-```python
-
-```
 
 ### 三，Spark调优案例
 
@@ -307,9 +299,6 @@ CPU times: user 40.5 ms, sys: 11.5 ms, total: 52 ms
 Wall time: 2.18 s
 ```
 
-```python
-
-```
 
 **3, 数据倾斜调优**
 
@@ -352,9 +341,6 @@ CPU times: user 351 ms, sys: 51 ms, total: 402 ms
 Wall time: 7 s
 ```
 
-```python
-
-```
 
 **4, broadcast+map代替join**
 
@@ -410,9 +396,7 @@ CPU times: user 14.3 ms, sys: 7.43 ms, total: 21.7 ms
 Wall time: 86.3 ms
 ```
 
-```python
 
-```
 
 **5，reduceByKey/aggregateByKey代替groupByKey**
 
@@ -453,15 +437,3 @@ print(names)
 CPU times: user 21.6 ms, sys: 6.63 ms, total: 28.3 ms
 Wall time: 118 ms
 ```
-
-```python
-
-```
-
-**如果本书对你有所帮助，想鼓励一下作者，记得给本项目加一颗星星star⭐️，并分享给你的朋友们喔😊!** 
-
-如果对本书内容理解上有需要进一步和作者交流的地方，欢迎在公众号"算法美食屋"下留言。作者时间和精力有限，会酌情予以回复。
-
-也可以在公众号后台回复关键字：**spark加群**，加入spark和大数据读者交流群和大家讨论。
-
-![image.png](./data/算法美食屋二维码.jpg)
