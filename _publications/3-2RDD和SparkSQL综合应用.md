@@ -7,9 +7,6 @@ date: 2021-10-01
 venue: 'Journal 1'
 ---
 
-# 3.2 RDD和SparkSQL综合应用
-
-
 
 在pyspark大数据项目实践中，我们往往要综合应用SparkSQL和RDD来完成任务。
 
