@@ -70,13 +70,6 @@ students = [("LiLei",18,87),("HanMeiMei",16,77),("DaChui",16,66),("Jim",18,77),(
 n = 3
 ```
 
-```python
-
-```
-
-```python
-
-```
 
 **4，排序并返回序号**
 
@@ -87,9 +80,6 @@ data = [1,7,8,5,3,18,34,9,0,12,8]
 
 ```
 
-```python
-
-```
 
 **5，二次排序**
 
@@ -101,9 +91,6 @@ students = [("LiLei",18,87),("HanMeiMei",16,77),("DaChui",16,66),("Jim",18,77),(
 
 ```
 
-```python
-
-```
 
 **6，连接操作**
 
@@ -116,17 +103,6 @@ scores = [("LiLei",76),("HanMeiMei",80),("DaChui",70),("RuHua",60)]
 
 ```
 
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
 
 **7，分组求众数**
 
@@ -134,14 +110,6 @@ scores = [("LiLei",76),("HanMeiMei",80),("DaChui",70),("RuHua",60)]
 #任务：有一批学生信息表格，包括class和age。求每个班级学生年龄的众数。
 students = [("class1",15),("class1",15),("class2",16),("class2",16),("class1",17),("class2",19)]
 
-
-```
-
-```python
-
-```
-
-```python
 
 ```
 
@@ -188,9 +156,6 @@ print("mode:",mode)
 mode: 8.5
 ```
 
-```python
-
-```
 
 **3，求TopN**
 
@@ -210,9 +175,6 @@ print(students_topn)
 [('LiLei', 18, 87), ('HanMeiMei', 16, 77), ('Jim', 18, 77)]
 ```
 
-```python
-
-```
 
 **4，排序并返回序号**
 
@@ -233,9 +195,6 @@ print(rdd_sorted_index.collect())
 [(0, 0), (1, 1), (3, 2), (5, 3), (7, 4), (8, 5), (8, 6), (9, 7), (12, 8), (18, 9), (34, 10)]
 ```
 
-```python
-
-```
 
 **5，二次排序**
 
@@ -286,9 +245,6 @@ rdd_sorted.collect()
  ('RuHua', 18, 50)]
 ```
 
-```python
-
-```
 
 **6，连接操作**
 
@@ -318,9 +274,6 @@ print(rdd_result.collect())
 [('class1', 78.0)]
 ```
 
-```python
-        
-```
 
 **7，分组求众数**
 
@@ -353,8 +306,4 @@ print(rdd_mode.collect())
 
 ```
 [('class1', 15.0), ('class2', 16.0)]
-```
-
-```python
-
 ```
