@@ -7,7 +7,6 @@ date: 2021-10-01
 venue: 'Journal 1'
 ---
 
-# 1.2 Spark的基本原理
 
 
 <!-- #region -->
