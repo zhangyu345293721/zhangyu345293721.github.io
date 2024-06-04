@@ -8,8 +8,6 @@ venue: 'Journal 1'
 ---
 
 
-# 2.1 入门Spark之RDD编程
-
 
 <!-- #region -->
 本节将介绍RDD数据结构的常用函数。
