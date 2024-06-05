@@ -2,7 +2,7 @@
 title: "3.1 Spark性能调优方法"
 collection: publications
 permalink: /publication/3-1Spark性能调优方法
-excerpt: 'Spark由于是新崛起的技术新秀，因此在大数据领域的完善程度，肯定不如MapReduce，比如基于HBase、Hive作为离线批处理程序的输入输出，Spark就远没有MapReduce来的完善<br/><img src="/pytorch.jpg">'
+excerpt: 'Spark由于是新崛起的技术新秀，因此在大数据领域的完善程度，肯定不如MapReduce，比如基于HBase、Hive作为离线批处理程序的输入输出，Spark就远没有MapReduce来的完善<br/><img src="/images/pytorch.jpg">'
 date: 2021-10-07
 venue: 'Journal 1'
 ---
