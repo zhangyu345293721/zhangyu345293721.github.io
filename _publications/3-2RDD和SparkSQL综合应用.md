@@ -2,7 +2,7 @@
 title: "3.2 RDD和SparkSQL综合应用"
 collection: publications
 permalink: /publication/3-2RDD和SparkSQL综合应用
-excerpt: 'Spark SQL实际上并不能完全替代Hive,因为Hive是一种基于HDFS的数据仓库,并且提供了基于SQL模型的,针对存储了大数据的数据仓库,进行分布式交互查询的查询引擎'
+excerpt: 'Spark SQL实际上并不能完全替代Hive,因为Hive是一种基于HDFS的数据仓库,并且提供了基于SQL模型的,针对存储了大数据的数据仓库,进行分布式交互查询的查询引擎<br/><img src="/pytorch.jpg">'
 date: 2021-10-10
 venue: 'Journal 1'
 ---
