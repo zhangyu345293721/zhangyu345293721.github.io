@@ -8,6 +8,9 @@ tags:
   - category2
 ---
 
+导入pandas库，为了方便起见也导入numpy库
+
+
 ```python
 import pandas as pd
 import numpy as np
