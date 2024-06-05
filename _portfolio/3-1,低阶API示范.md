@@ -1,4 +1,8 @@
-# 3-1,低阶API示范
+---
+title: "3-1,低阶API示范"
+excerpt: '下面的范例使用Pytorch的低阶API实现线性回归模型和DNN二分类模型<br/><img src="/images/pyspark.png">'
+collection: portfolio
+---
 
 下面的范例使用Pytorch的低阶API实现线性回归模型和DNN二分类模型。
 
@@ -583,16 +587,3 @@ ax2.set_title("y_pred");
 ![svg](output_31_0.svg)
     
 
-
-
-```python
-
-```
-
-**如果本书对你有所帮助，想鼓励一下作者，记得给本项目加一颗星星star⭐️，并分享给你的朋友们喔😊!** 
-
-如果对本书内容理解上有需要进一步和作者交流的地方，欢迎在公众号"算法美食屋"下留言。作者时间和精力有限，会酌情予以回复。
-
-也可以在公众号后台回复关键字：**加群**，加入读者交流群和大家讨论。
-
-![算法美食屋logo.png](https://tva1.sinaimg.cn/large/e6c9d24egy1h41m2zugguj20k00b9q46.jpg)
