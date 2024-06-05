@@ -1,4 +1,9 @@
-# 5-1, Dataset和DataLoader
+---
+title: " 5-1, Dataset和DataLoader"
+excerpt: 'Pytorch通常使用Dataset和DataLoader这两个工具类来构建数据管道<br/><img src="/images/pyspark.png">'
+collection: portfolio
+---
+
 
 Pytorch通常使用Dataset和DataLoader这两个工具类来构建数据管道。
 
@@ -615,21 +620,3 @@ for batch, in dl:
     tensor([34, 28,  2, 23, 15, 42, 43, 40, 22,  6])
     tensor([36,  3, 46,  9, 26, 16, 12, 17, 18,  1])
 
-
-
-```python
-
-```
-
-**如果本书对你有所帮助，想鼓励一下作者，记得给本项目加一颗星星star⭐️，并分享给你的朋友们喔😊!** 
-
-如果对本书内容理解上有需要进一步和作者交流的地方，欢迎在公众号"算法美食屋"下留言。作者时间和精力有限，会酌情予以回复。
-
-也可以在公众号后台回复关键字：**加群**，加入读者交流群和大家讨论。
-
-![算法美食屋logo.png](https://tva1.sinaimg.cn/large/e6c9d24egy1h41m2zugguj20k00b9q46.jpg)
-
-
-```python
-
-```
