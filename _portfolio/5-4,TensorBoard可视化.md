@@ -1,4 +1,9 @@
-# 5-4,TensorBoard可视化
+---
+title: "5-4,TensorBoard可视化"
+excerpt: 'TensorBoard正是这样一个神奇的炼丹可视化辅助工具。它原是TensorFlow的小弟，但它也能够很好地和Pytorch进行配合。甚至在Pytorch中使用TensorBoard比TensorFlow中使用TensorBoard还要来的更加简单和自然<br/><img src="/images/pyspark.png">'
+collection: portfolio
+---
+
 
 在我们的炼丹过程中，如果能够使用丰富的图像来展示模型的结构，指标的变化，参数的分布，输入的形态等信息，无疑会提升我们对问题的洞察力，并增加许多炼丹的乐趣。
 
