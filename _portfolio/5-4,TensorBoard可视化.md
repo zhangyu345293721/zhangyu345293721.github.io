@@ -1,6 +1,6 @@
 ---
 title: "5-4,TensorBoard可视化"
-excerpt: 'TensorBoard正是这样一个神奇的炼丹可视化辅助工具。它原是TensorFlow的小弟，但它也能够很好地和Pytorch进行配合。甚至在Pytorch中使用TensorBoard比TensorFlow中使用TensorBoard还要来的更加简单和自然<br/><img src="/images/pyspark.png">'
+excerpt: 'TensorBoard正是这样一个神奇的炼丹可视化辅助工具。它原是TensorFlow的小弟，但它也能够很好地和Pytorch进行配合。甚至在Pytorch中使用TensorBoard比TensorFlow中使用TensorBoard还要来的更加简单和自然<br/><img src="/images/pyspark.png" width="600">'
 collection: portfolio
 ---
 
