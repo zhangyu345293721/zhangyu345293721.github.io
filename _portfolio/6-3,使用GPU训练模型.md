@@ -1,6 +1,6 @@
 ---
 title: "6-3,使用GPU训练模型"
-excerpt: '深度学习的训练过程常常非常耗时，一个模型训练几个小时是家常便饭，训练几天也是常有的事情，有时候甚至要训练几十天<br/><img src="/images/pyspark.png">'
+excerpt: '深度学习的训练过程常常非常耗时，一个模型训练几个小时是家常便饭，训练几天也是常有的事情，有时候甚至要训练几十天<br/><img src="/images/pyspark.png" width="600">'
 collection: portfolio
 ---
 
