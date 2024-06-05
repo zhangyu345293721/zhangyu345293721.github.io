@@ -2,7 +2,7 @@
 title: "4.2 初识StructuredStreaming"
 collection: publications
 permalink: /publication/4-2初识StructuredStreaming
-excerpt: 'spark 提供了大量的算子，开发只需调用相关api进行实现无法关注底层的实现原理<br/><img src="/pytorch.png">'
+excerpt: 'spark 提供了大量的算子，开发只需调用相关api进行实现无法关注底层的实现原理<br/><img src="/pytorch.jpg">'
 date: 2021-10-18
 venue: 'Journal 1'
 ---
