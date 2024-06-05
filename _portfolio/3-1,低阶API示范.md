@@ -1,6 +1,6 @@
 ---
 title: "3-1,低阶API示范"
-excerpt: '下面的范例使用Pytorch的低阶API实现线性回归模型和DNN二分类模型<br/><img src="/images/pyspark.png">'
+excerpt: '下面的范例使用Pytorch的低阶API实现线性回归模型和DNN二分类模型<br/><img src="/images/pyspark.png" width="600">'
 collection: portfolio
 ---
 
