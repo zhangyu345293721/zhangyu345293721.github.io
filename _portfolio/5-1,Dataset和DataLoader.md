@@ -1,6 +1,6 @@
 ---
 title: " 5-1, Dataset和DataLoader"
-excerpt: 'Pytorch通常使用Dataset和DataLoader这两个工具类来构建数据管道<br/><img src="/images/pyspark.png">'
+excerpt: 'Pytorch通常使用Dataset和DataLoader这两个工具类来构建数据管道<br/><img src="/images/pyspark.png" width="600">'
 collection: portfolio
 ---
 
