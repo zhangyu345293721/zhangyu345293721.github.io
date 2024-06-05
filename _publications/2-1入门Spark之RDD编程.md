@@ -2,7 +2,7 @@
 title: "2.1 入门Spark之RDD编程"
 collection: publications
 permalink: /publication/2-1入门Spark之RDD编程
-excerpt: 'Spark除了一站式的特点之外，另外一个最重要的特点，就是基于内存进行计算，从而让它的速度可以达到MapReduce、Hive的数倍甚至数十倍<br/><img src="/images/500x300.png">'
+excerpt: 'Spark除了一站式的特点之外，另外一个最重要的特点，就是基于内存进行计算，从而让它的速度可以达到MapReduce、Hive的数倍甚至数十倍<br/><img src="/images/pytorch.jpg">'
 date: 2021-10-03
 venue: 'Journal 1'
 ---
