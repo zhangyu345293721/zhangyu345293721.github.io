@@ -2,7 +2,7 @@
 title: "2.4 SparkSQL编程练习"
 collection: publications
 permalink: /publication/2-4SparkSQL编程练习
-excerpt: 'Spark相较于MapReduce速度快的最主要原因就在于，MapReduce的计算模型太死板，必须是map-reduce模式，有时候即使完成一些诸如过滤之类的操作，也必须经过map-reduce过程，这样就必须经过shuffle过程'
+excerpt: 'Spark相较于MapReduce速度快的最主要原因就在于，MapReduce的计算模型太死板，必须是map-reduce模式，有时候即使完成一些诸如过滤之类的操作，也必须经过map-reduce过程，这样就必须经过shuffle过程<br/><img src="/pytorch.jpg">'
 date: 2021-10-06
 venue: 'Journal 1'
 ---
