@@ -3,7 +3,7 @@ title: "LightGBM 的完整解释 - 最快的梯度提升模型"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
-date: 2014-01-01
+date: 2024-03-01
 ---
 
 LightGBM是微软于2016年开发的梯度提升决策树模型（GBDT），与其他GBDT模型相比，LightGBM的最大特点是训练效率更快、准确率更高。
