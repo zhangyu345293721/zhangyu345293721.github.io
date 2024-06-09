@@ -1,7 +1,7 @@
 ---
 title: "LightGBM 的完整解释 - 最快的梯度提升模型"
 collection: teaching
-type: "Undergraduate course"
+type: "lightGBM专栏"
 permalink: /teaching/2014-spring-teaching-1
 date: 2024-03-01
 ---
