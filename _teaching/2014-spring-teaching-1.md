@@ -1,20 +1,32 @@
 ---
-title: "Teaching experience 1"
+title: "LightGBM 的完整解释 - 最快的梯度提升模型"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
 date: 2014-01-01
-location: "City, Country"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+LightGBM是微软于2016年开发的梯度提升决策树模型（GBDT），与其他GBDT模型相比，LightGBM的最大特点是训练效率更快、准确率更高。
 
-Heading 1
-======
+LightGBM 与一般的 Gradient Boosting Decision Tree 模型在结构上没有根本的区别，但通过以下特殊技术，LightGBM 使其训练速度更快。
 
-Heading 2
-======
+1. 基于梯度的一侧采样（GOSS）
+2. 树节点分裂中基于直方图的最佳值搜索
+3. 分类特征的最佳分割
+4. 独家功能捆绑
+5. 叶向树生长策略
+6. 并行优化
 
-Heading 3
-======
+### 基于梯度的单侧采样（GOSS）
+
+经典的基于树的梯度提升（GBDT）训练是一个重复过程，用于训练新树以适应所有训练集实例上先前树集的预测误差。（预测误差是所有训练集实例上的损失函数梯度）
+因此，默认情况下，GBDT 使用所有训练集实例来训练其集合中的每棵树。
+针对这一点，LightGBM引入了GOSS，其中我们只需要使用部分训练集来训练每个集成树。
+1. 具有大梯度的训练实例意味着该实例具有较大的当前预测误差，并且应该是适合下一个集成树的主要目标
+2. 小梯度的训练实例意味着该实例当前的预测误差相对较小，不需要下一个集成树过多担心，因此我们可以以某种概率丢弃它。
+般来说，GOSS的主要思想是，在训练下一个集成树之前，我们保留梯度较大的训练实例，并丢弃一些梯度较小的训练实例。
+下图为GOSS算法。
+<br/><img src="/images/lgb_1.png">
+所有训练实例均按梯度排序，a表示大梯度实例的采样百分比，b表示小梯度实例的采样百分比。
+<br/><img src="/images/Lgb2.png">
+
