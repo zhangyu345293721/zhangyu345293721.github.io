@@ -1,7 +1,7 @@
 ---
 title: "为什么LightGBM如此之快"
 collection: teaching
-type: "Workshop"
+type: "lightGBM专栏"
 permalink: /teaching/为什么LightGBM如此之快
 venue: "上海市"
 date: 2024-03-02
