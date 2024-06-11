@@ -15,6 +15,4 @@ main:
 
   - title: "时间序列预测论文"
     url: /markdown/
-    
-  - title: "Pandas"
-    url: /year-archive/
+  
