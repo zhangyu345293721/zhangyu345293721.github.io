@@ -68,18 +68,18 @@ importances = pd.DataFrame({
 importances = importances.sort_values(by='Importance', ascending=False)
 importances = importances.set_index('Feature')
 importances
-'''
+```
 
 ```python
 importances.plot.bar()
-'''
+```
 <br/><img src='/images/xgb_23.png'>  <br/>
 
 ### XGBoost评估
 
 confusion_matrix(y_test, preds)
 
-'''OUTPUT
+'''
 array([[1634,    9,   10],
        [   6,  259,    0],
        [   1,    0, 1381]])
@@ -90,3 +90,27 @@ array([[1634,    9,   10],
 在这其中，有 259 项评级获得了成功，6 项评级获得了成功，而 0 项评级获得了失败。
 
 在这 100 多个奖项中，有 1381 项获得认可，1 项获得认可，还有 0 项获得认可。
+
+#### 精确度和召回率
+
+```python
+print("Precision:", precision_score(y_test, preds, average='micro'))
+print("Recall:",recall_score(y_test, preds, average='micro'))
+
+OUTPUT
+Precision: 0.9921212121212121
+Recall: 0.9921212121212121
+
+```
+
+### F-1 分数
+
+```python
+print("F1-Score:", f1_score(y_test, preds, average='micro'))
+
+F1-Score: 0.9921212121212121
+```
+
+F-1 分数是由召回率和精确度结合起来的。<br/>
+
+总体而言，XGBoost 模型在评估目标的各项指标、性能或风险时表现得非常出色。经过评估后，召回了 f-1 和 f-2。
