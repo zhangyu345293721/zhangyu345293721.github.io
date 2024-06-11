@@ -3,7 +3,6 @@ title: "XGboost进行时间序列预测"
 collection: talks
 type: "Xgboost专栏"
 permalink: /talks/XGboost进行时间序列预测-1
-venue: "上海市"
 date: 2023-03-01
 location: "上海市"
 ---
