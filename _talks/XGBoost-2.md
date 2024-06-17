@@ -1,3 +1,13 @@
+---
+title: "XGBoost算法2"
+collection: talks
+type: "Xgboost专题"
+permalink: /talks/XGBoost-2
+date: 2023-03-20
+location: "上海市"
+---
+
+
 ## 算法原理
 
 XGBoost是在Gradient Boosting框架下面对GBDT的优化，是一种GBDT的工业级实现。其主要原理是在GBDT的基础上，在损失函数加入正则化部分，并且每一轮迭代对误差无法做二阶泰勒展开，加快对损失函数的优化速度。下面基于决策树弱分类器，梳理XGBoost算法的主流程，部分参数可能现在会看得有些懵懂，后面的内容会慢慢提到，这里先给一个整体的流程框架。
