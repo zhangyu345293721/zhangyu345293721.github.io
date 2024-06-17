@@ -8,7 +8,7 @@ location: "上海市"
 ---
 
 XGBoost（eXtreme Gradient Boosting）是一个高效的机器学习库，也是一种基于梯度提升决策树（Gradient Boosting Decision Tree）的集成学习算法，专为提升树算法的性能和速度而设计。它实现了梯度提升框架，并支持回归、分类及排序的问题。XGBoost通过优化计算资源使用和提供高度可配置的参数，成为数据科学竞赛和实际应用中的热门选择。
-<br/><img src='/images/xgboost.png'><br/>
+<br/><img src='/images/xgboost.png' width="600"><br/>
 
 ### 核心概念
 
