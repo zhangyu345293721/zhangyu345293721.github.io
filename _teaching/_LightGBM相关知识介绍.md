@@ -8,12 +8,6 @@ date: 2024-04-14
 location: "上海市"
 ---
 
-不久前微软DMTK(分布式机器学习工具包)团队在GitHub上开源了性能超越其他boosting工具的LightGBM，在三天之内GitHub上被star了1000次，fork了200次。知乎上有近千人关注“如何看待微软开源的LightGBM？”问题，被评价为“速度惊人”，“非常有启发”，“支持分布式”，“代码清晰易懂”，“占用内存小”等。
-
-
-
-
-
 ## 目录
 - [1. LightGBM是什么东东](https://github.com/NLP-LOVE/ML-NLP/tree/master/Machine%20Learning/3.4%20LightGBM#1-lightgbm是什么东东)
   - [1.1 LightGBM在哪些地方进行了优化 (区别XGBoost)？](https://github.com/NLP-LOVE/ML-NLP/tree/master/Machine%20Learning/3.4%20LightGBM#11-lightgbm在哪些地方进行了优化----区别xgboost)
