@@ -2,7 +2,7 @@
 title: "LightGBM相关知识介绍"
 collection: teaching
 type: "lightGBM专栏"
-permalink: /teaching/LightGBM相关知识介绍
+permalink: /teaching/_LightGBM相关知识介绍
 venue: "上海市"
 date: 2024-04-14
 location: "上海市"
