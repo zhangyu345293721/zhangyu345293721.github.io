@@ -125,9 +125,3 @@ GitHub：[点击进入](https://github.com/NLP-LOVE/ML-NLP/blob/master/Machine%2
 ## 5. 参考文献
 
 [通俗理解kaggle比赛大杀器xgboost](https://blog.csdn.net/v_JULY_v/article/details/81410574)
-
-> 作者：[@mantchs](https://github.com/NLP-LOVE/ML-NLP)
->
-> GitHub：[https://github.com/NLP-LOVE/ML-NLP](https://github.com/NLP-LOVE/ML-NLP)
->
-> 欢迎大家加入讨论！共同完善此项目！群号：【541954936】`<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=863f915b9178560bd32ca07cd090a7d9e6f5f90fcff5667489697b1621cecdb3"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="NLP面试学习群" title="NLP面试学习群">``</a>`
