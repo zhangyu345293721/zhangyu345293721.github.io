@@ -1,10 +1,17 @@
-title: DataWhale Workout No.8 CatBoost Summary date: 2019-08-19 08:18:37 categories: 机器学习 tags: - 集成学习 - CatBoost - Ordered boosting - Prediction shift - sklearn description: 这是DataWhale暑期学习小组-高级算法梳理的补充，是对目前最新的开源Boost族算法CatBoost的介绍，结合相关论文以及笔者的使用经验，对CatBoost的算法特性和适用场景做一些小结。
-
+---
+title: "Catboost基础介绍"
+collection: talks
+type: "Xgboost专题"
+permalink: /talks/Catboost基础介绍-1
+date: 2023-03-12
+location: "上海市"
 ---
 
-## CatBoost
-
 CatBoost是俄罗斯的搜索巨头Y andex在2017年开源的机器学习库，也是Boosting族算法的一种，同前面介绍过的XGBoost和LightGBM类似，依然是在GBDT算法框架下的一种改进实现，是一种基于对称决策树（oblivious trees）算法的参数少、支持类别型变量和高准确性的GBDT框架，主要说解决的痛点是高效合理地处理类别型特征，这个从它的名字就可以看得出来，CatBoost是由catgorical和boost组成，另外是处理梯度偏差（Gradient bias）以及预测偏移（Prediction shift）问题，提高算法的准确性和泛化能力。
+
+
+
+## CatBoost
 
 ![](https://pic3.zhimg.com/80/v2-1d29ffb5b540e8b616433391f6e7be26_720w.jpg)
 
