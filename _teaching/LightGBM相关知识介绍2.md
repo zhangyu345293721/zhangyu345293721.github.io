@@ -8,9 +8,9 @@ date: 2024-04-16
 location: "上海市"
 ---
 
-## LightGBM
-
 同XGBoost类似，LightGBM依然是在GBDT算法框架下的一种改进实现，是一种基于决策树算法的快速、分布式、高性能的GBDT框架，主要说解决的痛点是面对高维度大数据时提高GBDT框架算法的效率和可扩展性。
+
+## LightGBM
 
 “Light”主要体现在三个方面，即更少的样本、更少的特征、更少的内存，分别通过单边梯度采样（Gradient-based One-Side Sampling）、互斥特征合并（Exclusive Feature Bundling）、直方图算法（Histogram）三项技术实现。另外，在工程上面，LightGBM还在并行计算方面做了诸多的优化，支持特征并行和数据并行，并针对各自的并行方式做了优化，减少通信量。
 
