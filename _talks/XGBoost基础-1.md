@@ -1,5 +1,5 @@
 ---
-title: "XGBoost基础"
+title: "XGBoost算法介绍"
 collection: talks
 type: "Xgboost专题"
 permalink: /talks/XGBoost基础-1
