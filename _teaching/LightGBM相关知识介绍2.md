@@ -18,8 +18,8 @@ location: "上海市"
 
 LightGBM起源于微软亚洲研究院在NIPS发表的系列论文：
 
-* [Qi Meng, Guolin Ke, Taifeng Wang, Wei Chen, Qiwei Ye, Zhi-Ming Ma, Tie-Yan Liu. “A Communication-Efficient Parallel Algorithm for Decision Tree.” Advances in Neural Information Processing Systems 29 (NIPS 2016), pp. 1279-1287](https://link.zhihu.com/?target=https%3A//papers.nips.cc/paper/6381-a-communication-efficient-parallel-algorithm-for-decision-tree.pdf)
-* [Guolin Ke, Qi Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei Ye, Tie-Yan Liu. “LightGBM: A Highly Efficient Gradient Boosting Decision Tree.” Advances in Neural Information Processing Systems 30 (NIPS 2017), pp. 3149-3157](https://link.zhihu.com/?target=https%3A//papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree.pdf)
+1. [Qi Meng, Guolin Ke, Taifeng Wang, Wei Chen, Qiwei Ye, Zhi-Ming Ma, Tie-Yan Liu. “A Communication-Efficient Parallel Algorithm for Decision Tree.” Advances in Neural Information Processing Systems 29 (NIPS 2016), pp. 1279-1287](https://link.zhihu.com/?target=https%3A//papers.nips.cc/paper/6381-a-communication-efficient-parallel-algorithm-for-decision-tree.pdf)
+2. [Guolin Ke, Qi Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei Ye, Tie-Yan Liu. “LightGBM: A Highly Efficient Gradient Boosting Decision Tree.” Advances in Neural Information Processing Systems 30 (NIPS 2017), pp. 3149-3157](https://link.zhihu.com/?target=https%3A//papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree.pdf)
 
 并于2016年10月17日在[LightGBM](https://link.zhihu.com/?target=https%3A//github.com/microsoft/LightGBM)上面开源，三天内在GitHub上面被star了1000次，fork了200次。知乎上现有近2000人关注“如何看待微软开源的LightGBM？”问题。
 
@@ -55,10 +55,10 @@ LightGBM起源于微软亚洲研究院在NIPS发表的系列论文：
 
 直方图算法有如下优点：
 
-* 内存消耗降低。预排序算法需要的内存约是训练数据的两倍（2x样本数x维度x4Bytes），它需要用32位浮点来保存特征值，并且对每一列特征，都需要一个额外的排好序的索引，这也需要32位的存储空间。对于 直方图算法，则只需要(1x样本数x维度x1Bytes)的内存消耗，仅为预排序算法的1/8。因为直方图算法仅需要存储特征的 bin 值(离散化后的数值)，不需要原始的特征值，也不用排序，而bin值用8位整型存储就足够了。
-* 算法时间复杂度大大降低。决策树算法在节点分裂时有两个主要操作组成，一个是“寻找分割点”，另一个是“数据分割”。从算法时间复杂度来看，在“寻找分割点”时，预排序算法对于深度为$k$的树的时间复杂度：对特征所有取值的排序为$O(NlogN)$，$N$为样本点数目，若有$D$维特征，则$O(kDNlogN)$，而直方图算法需要$O(kD \times bin)$(bin是histogram 的横轴的数量，一般远小于样本数量$N$)。
-* 再举个例子说明上述两点的优化，假设数据集$A$的某个特征的特征值有（二叉树存储）：${1.2,1.3,2.2,2.3,3.1,3.3}$，预排序算法要全部遍历一遍，需要切分大约5次。进行离散化后，只需要切分2次 ${{1},{2,3}}$ 和 ${{1,2},{3}}$，除了切分次数减少，内存消耗也大大降低。
-* 直方图算法还可以进一步加速。一个容易观察到的现象：一个叶子节点的直方图可以直接由父节点的直方图和兄弟节点的直方图做差得到。通常构造直方图，需要遍历该叶子上的所有数据，但直方图做差仅需遍历直方图的$k$个bin。利用这个方法，LightGBM可以在构造一个叶子的直方图后，可以用非常微小的代价得到它兄弟叶子的直方图，在速度上可以提升一倍。
+1. 内存消耗降低。预排序算法需要的内存约是训练数据的两倍（2x样本数x维度x4Bytes），它需要用32位浮点来保存特征值，并且对每一列特征，都需要一个额外的排好序的索引，这也需要32位的存储空间。对于 直方图算法，则只需要(1x样本数x维度x1Bytes)的内存消耗，仅为预排序算法的1/8。因为直方图算法仅需要存储特征的 bin 值(离散化后的数值)，不需要原始的特征值，也不用排序，而bin值用8位整型存储就足够了。
+2. 算法时间复杂度大大降低。决策树算法在节点分裂时有两个主要操作组成，一个是“寻找分割点”，另一个是“数据分割”。从算法时间复杂度来看，在“寻找分割点”时，预排序算法对于深度为$k$的树的时间复杂度：对特征所有取值的排序为$O(NlogN)$，$N$为样本点数目，若有$D$维特征，则$O(kDNlogN)$，而直方图算法需要$O(kD \times bin)$(bin是histogram 的横轴的数量，一般远小于样本数量$N$)。
+3. 再举个例子说明上述两点的优化，假设数据集$A$的某个特征的特征值有（二叉树存储）：${1.2,1.3,2.2,2.3,3.1,3.3}$，预排序算法要全部遍历一遍，需要切分大约5次。进行离散化后，只需要切分2次 ${{1},{2,3}}$ 和 ${{1,2},{3}}$，除了切分次数减少，内存消耗也大大降低。
+4. 直方图算法还可以进一步加速。一个容易观察到的现象：一个叶子节点的直方图可以直接由父节点的直方图和兄弟节点的直方图做差得到。通常构造直方图，需要遍历该叶子上的所有数据，但直方图做差仅需遍历直方图的$k$个bin。利用这个方法，LightGBM可以在构造一个叶子的直方图后，可以用非常微小的代价得到它兄弟叶子的直方图，在速度上可以提升一倍。
 
 ![](https://pic1.zhimg.com/80/v2-86919e4fc187a11fe3fdb72780709c98_720w.jpg)
 
@@ -78,8 +78,8 @@ LightGBM起源于微软亚洲研究院在NIPS发表的系列论文：
 
 那么接下来有两个问题需要处理：
 
-* 需要合并哪些特征
-* 如何合并这些特征
+1. 需要合并哪些特征
+2. 如何合并这些特征
 
 ### Greedy Bundling
 
@@ -121,52 +121,52 @@ LightGBM具有支持高效并行的优点。LightGBM原生支持并行学习，�
 
 传统特征并行做法如下：
 
-* 垂直划分数据（对特征划分），不同的worker有不同的特征集
-* 每个workers找到局部最佳的切分点{feature, threshold}
-* workers使用点对点通信，找到全局最佳切分点
-* 具有全局最佳切分点的worker进行节点分裂，然后广播切分后的结果（左右子树的instance indices）
-* 其它worker根据收到的instance indices也进行划分
+1. 垂直划分数据（对特征划分），不同的worker有不同的特征集
+2. 每个workers找到局部最佳的切分点{feature, threshold}
+3. workers使用点对点通信，找到全局最佳切分点
+4. 具有全局最佳切分点的worker进行节点分裂，然后广播切分后的结果（左右子树的instance indices）
+5. 其它worker根据收到的instance indices也进行划分
 
 ![](https://pic3.zhimg.com/80/v2-b0d10c5cd832402e4503e2c1220f7376_720w.jpg)
 
 主要有以下缺点：
 
-* 无法加速分裂的过程，该过程的时间复杂度为$O(N)$，当数据量大的时候效率不高
-* 需要广播划分的结果（左右子树的instance indices），1条数据1bit的话，通信花费大约需要$O(N/8)$
+1. 无法加速分裂的过程，该过程的时间复杂度为$O(N)$，当数据量大的时候效率不高
+2. 需要广播划分的结果（左右子树的instance indices），1条数据1bit的话，通信花费大约需要$O(N/8)$
 
 LightGBM的特征并行每个worker保存所有的数据集，这样找到全局最佳切分点后各个worker都可以自行划分，就不用进行广播划分结果，减小了网络通信量。过程如下：
 
-* 每个workers找到局部最佳的切分点{feature, threshold}
-* workers使用点对点通信，找到全局最佳切分点
-* 每个worker根据全局全局最佳切分点进行节点分裂
+1. 每个workers找到局部最佳的切分点{feature, threshold}
+2. workers使用点对点通信，找到全局最佳切分点
+3. 每个worker根据全局全局最佳切分点进行节点分裂
 
 这样虽然不用进行广播划分结果，减小了网络通信量。但是也有缺点：
 
-* 分裂过程的复杂度保持不变
-* 每个worker保存所有数据，存储代价高
+1. 分裂过程的复杂度保持不变
+2. 每个worker保存所有数据，存储代价高
 
 ## 数据并行
 
 数据并行的目标是并行化整个决策学习的过程，传统算法的做法如下：
 
-* 水平切分数据，不同的worker拥有部分数据
-* 每个worker根据本地数据构建局部直方图
-* 合并所有的局部直方图得到全部直方图
-* 根据全局直方图找到最优切分点并进行分裂
+1. 水平切分数据，不同的worker拥有部分数据
+2. 每个worker根据本地数据构建局部直方图
+3. 合并所有的局部直方图得到全部直方图
+4. 根据全局直方图找到最优切分点并进行分裂
 
 ![](https://pic4.zhimg.com/80/v2-0b80a0229c2a45c62c98dd41e1cc63c7_720w.jpg)
 
 在第3步当中有两种合并方式：
 
-* 采用点对点方式(point-to-point communication algorithm)进行通讯，每个worker通讯量为$ ( ℎ × × )$
-* 采用collective communication algorithm(如“[All Reduce](https://link.zhihu.com/?target=http%3A//pages.tacc.utexas.edu/~eijkhout/pcse/html/mpi-collective.html)”)进行通讯（相当于有一个中心节点，通讯后在返回结果），每个worker的通讯量为$O(2× × )$
+1. 采用点对点方式(point-to-point communication algorithm)进行通讯，每个worker通讯量为$ ( ℎ × × )$
+2. 采用collective communication algorithm(如“[All Reduce](https://link.zhihu.com/?target=http%3A//pages.tacc.utexas.edu/~eijkhout/pcse/html/mpi-collective.html)”)进行通讯（相当于有一个中心节点，通讯后在返回结果），每个worker的通讯量为$O(2× × )$
 
 不难发现，通信的代价也是很高的，这也是数据并行的缺点。
 
 LightGBM的数据并行主要做了以下两点优化：
 
-* 使用“Reduce Scatter”将不同worker的不同特征的直方图合并，然后workers在局部合并的直方图中找到局部最优划分，最后同步全局最优划分
-* 通过直方图作差法得到兄弟节点的直方图，因此只需要通信一个节点的直方图，减半通信量
+1. 使用“Reduce Scatter”将不同worker的不同特征的直方图合并，然后workers在局部合并的直方图中找到局部最优划分，最后同步全局最优划分
+2. 通过直方图作差法得到兄弟节点的直方图，因此只需要通信一个节点的直方图，减半通信量
 
 通过上述两点做法，通信开销降为$ (0.5 × × )$。
 
@@ -178,11 +178,11 @@ PV-Tree和普通的决策树差不多，只是在寻找最优切分点上有所�
 
 主要思路如下：
 
-* 水平切分数据，不同的worker拥有部分数据
-* Local voting: 每个worker构建直方图，找到$top-k$个最优的本地划分特征
-* Global voting: 中心节点聚合得到最优的$top-2k$个全局划分特征（$top-2k$是看对各个worker选择特征的个数进行计数，取最多的$2k$个）
-* Best Attribute Identification： 中心节点向worker收集这$top-2k$个特征的直方图，并进行合并，然后计算得到全局的最优划分
-* 中心节点将全局最优划分广播给所有的worker，worker进行本地划分
+1. 水平切分数据，不同的worker拥有部分数据
+2. Local voting: 每个worker构建直方图，找到$top-k$个最优的本地划分特征
+3. Global voting: 中心节点聚合得到最优的$top-2k$个全局划分特征（$top-2k$是看对各个worker选择特征的个数进行计数，取最多的$2k$个）
+4. Best Attribute Identification： 中心节点向worker收集这$top-2k$个特征的直方图，并进行合并，然后计算得到全局的最优划分
+4. 中心节点将全局最优划分广播给所有的worker，worker进行本地划分
 
 ![](https://pic2.zhimg.com/80/v2-9a2c6161fa1bdacd0f27d237ef06f2ed_720w.jpg)
 
@@ -194,8 +194,8 @@ Cache（高速缓存）作为内存局部区域的副本，用来存放当前活
 
 预排序算法中有两个频繁的操作会导致cache-miss，也就是缓存消失（对速度的影响很大，特别是数据量很大的时候，顺序访问比随机访问的速度快4倍以上 ）。
 
-* 对梯度的访问：在计算增益的时候需要利用梯度，假设梯度信息存在一个数组$g[i]$中，在对特征$A$进行增益时，需要根据特征$A$排序后的索引找到$g[i]$中对应的梯度信息。特征值$A_1$对应的样本行号可能是3，对应的梯度信息在$g[3]$，而特征值$A_2$对应的样本行号可能是9999，对应的梯度信息在$g[9999]$，即对于不同的特征，访问梯度的顺序是不一样的，并且是随机的
-* 对于索引表的访问：预排序算法使用了行号和叶子节点号的索引表，防止数据切分的时候对所有的特征进行切分。同访问梯度一样，所有的特征都要通过访问这个索引表来索引
+1. 对梯度的访问：在计算增益的时候需要利用梯度，假设梯度信息存在一个数组$g[i]$中，在对特征$A$进行增益时，需要根据特征$A$排序后的索引找到$g[i]$中对应的梯度信息。特征值$A_1$对应的样本行号可能是3，对应的梯度信息在$g[3]$，而特征值$A_2$对应的样本行号可能是9999，对应的梯度信息在$g[9999]$，即对于不同的特征，访问梯度的顺序是不一样的，并且是随机的
+2. 对于索引表的访问：预排序算法使用了行号和叶子节点号的索引表，防止数据切分的时候对所有的特征进行切分。同访问梯度一样，所有的特征都要通过访问这个索引表来索引
 
 这两个操作都是随机的访问，会给系统性能带来非常大的下降。
 
@@ -215,44 +215,44 @@ LightGBM使用的直方图算法能很好的解决这类问题。首先。对梯
 
 `sklearn`本身的文档当中并没有LightGBM的描述，[Github](https://link.zhihu.com/?target=https%3A//github.com/microsoft/LightGBM/blob/master/python-package/lightgbm/sklearn.py)上面看到主要参数如下：
 
-* `boosting_type` : 提升类型，字符串，可选项 (default=`gbdt`)
+1. `boosting_type` : 提升类型，字符串，可选项 (default=`gbdt`)
 
-  * `gbdt`, 传统梯度提升树
-  * `dart`, 带Dropout的MART
-  * `goss`, 单边梯度采样
-  * `rf`, 随机森林
-* `num_leaves` : 基学习器的最大叶子树，整型，可选项 (default=31)
-* `max_depth` : 基学习器的最大树深度，小于等于0表示没限制，整型，可选项 (default=-1)
-* `learning_rate` : 提升学习率，浮点型，可选项 (default=0.1)
-* `n_estimators` : 提升次数，整型，可选项 (default=100)
-* `subsample_for_bin` : 构造分箱的样本个数，整型，可选项 (default=200000)
-* `objective` : 指定学习任务和相应的学习目标或者用户自定义的需要优化的目标损失函数，字符串， 可调用的或者None, 可选项 (default=None)，若不为None，则有:
-* `regression` for LGBMRegressor -`binary` or `multiclass` for LGBMClassifier
-* `lambdarank` for LGBMRanker
-* `class_weight` : 该参数仅在多分类的时候会用到，多分类的时候各个分类的权重，对于二分类任务，你可以使用`is_unbalance` 或 `scale_pos_weight`，字典数据, `balanced` or None, 可选项 (default=None)
-* `min_split_gain` : 在叶子节点上面做进一步分裂的最小损失减少值，浮点型，可选项 (default=0.)
-* `min_child_weight` : 在树的一个孩子或者叶子所需的最小样本权重和，浮点型，可选项 (default=1e-3)
-* `min_child_samples` : 在树的一个孩子或者叶子所需的最小样本，整型，可选项 (default=20)
-* `subsample` : 训练样本的子采样比例，浮点型，可选项 (default=1.)
-* `subsample_freq` : 子采样频率，小于等于0意味着不可用，整型，可选项 (default=0)
-* `colsample_bytree` : 构建单棵树时列采样比例，浮点型，可选项 (default=1.)
-* `reg_alpha` : $L_1$正则项，浮点型，可选项 (default=0.)
-* `reg_lambda` :$L_2$正则项，浮点型，可选项 (default=0.)
-* `random_state` : 随机数种子，整型或者None, 可选项 (default=None)
-* `n_jobs` : 线程数，整型，可选项 (default=-1)
-* `silent` : 运行时是否打印消息，布尔型，可选项 (default=True)
-* `importance_type` : 填入到`feature_importances_`的特征重要性衡量类型，如果是`split`，则以特征被用来分裂的次数，如果是`gain`，则以特征每次用于分裂的累积增益，字符串，可选项 (default=`split`)
+  1. `gbdt`, 传统梯度提升树
+  2. `dart`, 带Dropout的MART
+  3. `goss`, 单边梯度采样
+  4. `rf`, 随机森林
+1. `num_leaves` : 基学习器的最大叶子树，整型，可选项 (default=31)
+2. `max_depth` : 基学习器的最大树深度，小于等于0表示没限制，整型，可选项 (default=-1)
+3. `learning_rate` : 提升学习率，浮点型，可选项 (default=0.1)
+4. `n_estimators` : 提升次数，整型，可选项 (default=100)
+5. `subsample_for_bin` : 构造分箱的样本个数，整型，可选项 (default=200000)
+6. `objective` : 指定学习任务和相应的学习目标或者用户自定义的需要优化的目标损失函数，字符串， 可调用的或者None, 可选项 (default=None)，若不为None，则有:
+7. `regression` for LGBMRegressor -`binary` or `multiclass` for LGBMClassifier
+8. `lambdarank` for LGBMRanker
+9. `class_weight` : 该参数仅在多分类的时候会用到，多分类的时候各个分类的权重，对于二分类任务，你可以使用`is_unbalance` 或 `scale_pos_weight`，字典数据, `balanced` or None, 可选项 (default=None)
+10. `min_split_gain` : 在叶子节点上面做进一步分裂的最小损失减少值，浮点型，可选项 (default=0.)
+11. `min_child_weight` : 在树的一个孩子或者叶子所需的最小样本权重和，浮点型，可选项 (default=1e-3)
+12. `min_child_samples` : 在树的一个孩子或者叶子所需的最小样本，整型，可选项 (default=20)
+13. `subsample` : 训练样本的子采样比例，浮点型，可选项 (default=1.)
+14. `subsample_freq` : 子采样频率，小于等于0意味着不可用，整型，可选项 (default=0)
+15. `colsample_bytree` : 构建单棵树时列采样比例，浮点型，可选项 (default=1.)
+16. `reg_alpha` : $L_1$正则项，浮点型，可选项 (default=0.)
+17. `reg_lambda` :$L_2$正则项，浮点型，可选项 (default=0.)
+18. `random_state` : 随机数种子，整型或者None, 可选项 (default=None)
+19.  `n_jobs` : 线程数，整型，可选项 (default=-1)
+20.  `silent` : 运行时是否打印消息，布尔型，可选项 (default=True)
+20.  `importance_type` : 填入到`feature_importances_`的特征重要性衡量类型，如果是`split`，则以特征被用来分裂的次数，如果是`gain`，则以特征每次用于分裂的累积增益，字符串，可选项 (default=`split`)
 
 除了以上参数，LightGBM原生接口当中参数众多，主要有以下八大类：
 
-* 核心参数
-* 学习控制参数
-* IO参数
-* 目标参数
-* 度量参数
-* 网络参数
-* GPU参数
-* 模型参数
+1. 核心参数
+2. 学习控制参数
+3. IO参数
+4. 目标参数
+5. 度量参数
+6. 网络参数
+7. GPU参数
+8. 模型参数
 
 如果有遗漏，具体可以参阅[LightGBM Parameters](https://link.zhihu.com/?target=https%3A//lightgbm.readthedocs.io/en/latest/Parameters.html)
 
