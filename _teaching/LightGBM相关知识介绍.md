@@ -13,7 +13,10 @@ LightGBM在Higgs数据集上LightGBM比XGBoost快将近10倍，内存占用率�
 
 
 
-## 目录
+
+
+
+### 目录
 - [1. LightGBM是什么东东](https://github.com/NLP-LOVE/ML-NLP/tree/master/Machine%20Learning/3.4%20LightGBM#1-lightgbm是什么东东)
   - [1.1 LightGBM在哪些地方进行了优化 (区别XGBoost)？](https://github.com/NLP-LOVE/ML-NLP/tree/master/Machine%20Learning/3.4%20LightGBM#11-lightgbm在哪些地方进行了优化----区别xgboost)
   - [1.2 Histogram算法](https://github.com/NLP-LOVE/ML-NLP/tree/master/Machine%20Learning/3.4%20LightGBM#12-histogram算法)
@@ -23,7 +26,7 @@ LightGBM在Higgs数据集上LightGBM比XGBoost快将近10倍，内存占用率�
 - [2. LightGBM优点](https://github.com/NLP-LOVE/ML-NLP/tree/master/Machine%20Learning/3.4%20LightGBM#2-lightgbm优点)
 - [3. 代码实现](https://github.com/NLP-LOVE/ML-NLP/blob/master/Machine%20Learning/3.4%20LightGBM/3.4%20LightGBM.ipynb)
 
-## 1. LightGBM是什么东东
+### 1. LightGBM是什么东东
 
 LightGBM （Light Gradient Boosting Machine）(请点击[https://github.com/Microsoft/LightGBM](https://github.com/Microsoft/LightGBM))是一个实现GBDT算法的框架，支持高效率的并行训练。
 
