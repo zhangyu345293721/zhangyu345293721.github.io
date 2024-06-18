@@ -89,7 +89,3 @@ LightGBM （Light Gradient Boosting Machine）(请点击[https://github.com/Micr
 
 GitHub：[点击进入](https://github.com/NLP-LOVE/ML-NLP/blob/master/Machine%20Learning/3.4%20LightGBM/3.4%20LightGBM.ipynb)
 
-> 作者：[@mantchs](https://github.com/NLP-LOVE/ML-NLP)
->
-> GitHub：[https://github.com/NLP-LOVE/ML-NLP](https://github.com/NLP-LOVE/ML-NLP)
->
