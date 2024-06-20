@@ -1,5 +1,5 @@
 ---
-title: "XGBoost基础1"
+title: "XGBoost基础介绍1"
 collection: talks
 type: "Xgboost专题"
 permalink: /talks/XGBoost-1
