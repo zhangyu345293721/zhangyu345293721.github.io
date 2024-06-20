@@ -1,5 +1,5 @@
 ---
-title: "LightGBM相关知识介绍"
+title: "LightGBM相关知识介绍1"
 collection: teaching
 type: "lightGBM专栏"
 permalink: /teaching/LightGBM相关知识介绍
