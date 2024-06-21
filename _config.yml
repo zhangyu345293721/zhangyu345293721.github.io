@@ -21,7 +21,7 @@ repository               : "zhangyu345293721/zhangyu345293721.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_1.png"
+  avatar           : "profile.png"
   name             : "章鱼哥"
   bio              : "我是Octopus，这个名字来源于我的中文名--章鱼；我热爱编程、热爱算法、热爱开源。所有源码在我的个人github ；这博客是记录我学习的点点滴滴，如果您对 Python、Java、AI、算法有兴趣，可以关注我的动态，一起学习，共同进步"
   location         : "上海市"
