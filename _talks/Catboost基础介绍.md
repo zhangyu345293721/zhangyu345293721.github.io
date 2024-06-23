@@ -2,7 +2,7 @@
 title: "Catboost基础介绍"
 collection: talks
 type: "Xgboost专题"
-permalink: /talks/Catboost基础介绍-1
+permalink: /talks/Catboost基础介绍
 date: 2023-03-12
 location: "上海市"
 ---
