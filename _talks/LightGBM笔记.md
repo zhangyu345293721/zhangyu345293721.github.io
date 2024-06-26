@@ -1,7 +1,7 @@
 ---
 title: "LightGBM: A Highly Efficient Gradient Boosting Decision Tree"
 collection: talks
-permalink: /talks/LightGBM: A Highly Efficient Gradient Boosting Decision Tree
+permalink: /talks/LightGBM笔记
 excerpt: 'LightGBM 由微软提出，主要用于解决 GDBT 在海量数据中遇到的问题，以便其可以更好更快地用于工业实践中'
 date: 2021-10-05
 ---
