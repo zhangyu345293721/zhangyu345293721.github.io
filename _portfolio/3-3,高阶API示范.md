@@ -1,5 +1,5 @@
 ---
-title: "3-3,高阶API示范"
+title: "3-3.高阶API示范"
 excerpt: 'Pytorch没有官方的高阶API，一般需要用户自己实现训练循环、验证循环、和预测循环<br/><img src="/images/pyspark.png" width="600">'
 collection: portfolio
 ---
