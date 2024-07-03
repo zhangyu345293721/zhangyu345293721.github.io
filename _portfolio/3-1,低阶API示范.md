@@ -83,11 +83,6 @@ plt.show()
 ```
 
 
-    
-![svg](output_6_0.svg)
-    
-
-
 
 ```python
 # 构建数据管道迭代器
@@ -366,9 +361,6 @@ plt.legend(["positive","negative"]);
 
 ```
 
-
-    
-![svg](output_21_0.svg)
     
 
 
