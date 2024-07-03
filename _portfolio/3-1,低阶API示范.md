@@ -583,7 +583,3 @@ ax2.set_title("y_pred");
 ```
 
 
-    
-![svg](output_31_0.svg)
-    
-
