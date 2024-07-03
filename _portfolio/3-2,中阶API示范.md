@@ -1,5 +1,5 @@
 ---
-title: "3-2,中阶API示范"
+title: "3-2.中阶API示范"
 excerpt: 'Pytorch的中阶API主要包括各种模型层，损失函数，优化器，数据管道等等<br/><img src="/images/pyspark.png" width="600">'
 collection: portfolio
 ---
