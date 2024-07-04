@@ -7,10 +7,10 @@ date: 2023-11-05
 ---
 
 
-ICML 2021：时间序列
-论文： 层级时间序列相关概率预测端到端学习方法
+ICML 2021：时间序列 <br/>
+论文： 层级时间序列相关概率预测端到端学习方法 <br/>
 
-论文地址：http://proceedings.mlr.press/v139/rangapuram21a/rangapuram21a.pdf
+论文地址：http://proceedings.mlr.press/v139/rangapuram21a/rangapuram21a.pdf <br/>
 论文代码：https://github.com/rshyamsundar/gluonts-hierarchical-ICML-2021
 
 
