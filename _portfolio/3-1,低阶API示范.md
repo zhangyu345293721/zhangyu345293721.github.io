@@ -97,7 +97,6 @@ batch_size = 8
 print(features)
 print(labels)
 
-
 ```
 
     tensor([[-0.3932, -1.2790],
@@ -141,10 +140,6 @@ model = LinearRegression()
 
 ```
 
-
-```python
-
-```
 
 **3，训练模型**
 
@@ -269,9 +264,6 @@ train_model(model,epochs = 200)
 
 
 
-```python
-
-```
 
 
 ```python
@@ -302,21 +294,12 @@ plt.show()
 
 
     
-![svg](output_16_0.svg)
-    
 
 
 
-```python
-
-```
 
 ### 二，DNN二分类模型
 
-
-```python
-
-```
 
 **1，准备数据**
 
@@ -399,9 +382,6 @@ print(labels)
 
 
 
-```python
-
-```
 
 **2，定义模型**
 
