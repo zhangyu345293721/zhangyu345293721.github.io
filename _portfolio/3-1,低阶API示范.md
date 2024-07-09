@@ -53,9 +53,6 @@ X = 10*torch.rand([n,2])-5.0  #torch.rand是均匀分布
 w0 = torch.tensor([[2.0],[-3.0]])
 b0 = torch.tensor([[10.0]])
 Y = X@w0 + b0 + torch.normal(0.0,2.0,size = [n,1])  # @表示矩阵乘法,增加正态扰动
-
-
-
 ```
 
 
