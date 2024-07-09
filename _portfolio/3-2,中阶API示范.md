@@ -34,10 +34,6 @@ print("torch.__version__="+torch.__version__)
 
 
 
-```python
-
-```
-
 ### 一，线性回归模型
 
 **1，准备数据**
@@ -88,8 +84,6 @@ plt.show()
 
 
     
-![svg](output_7_0.svg)
-    
 
 
 
@@ -102,9 +96,6 @@ dl = DataLoader(ds,batch_size = 10,shuffle=True,
 ```
 
 
-```python
-
-```
 
 **2，定义模型**
 
