@@ -34,11 +34,6 @@ print("torchvision.__version__="+torchvision.__version__)
 
 <br>
 
-<font color="red">
- 
-公众号 **算法美食屋** 回复关键词：**pytorch**， 获取本项目源码和所用数据集百度云盘下载链接。
-    
-</font> 
 
 
 ### 一，深入理解Dataset和DataLoader原理
@@ -71,9 +66,6 @@ print("torchvision.__version__="+torchvision.__version__)
 
 
 
-```python
-
-```
 
 **2，Dataset和DataLoader的功能分工**
 
@@ -169,9 +161,6 @@ print("labels = ",labels)
 
 
 
-```python
-
-```
 
 **3，Dataset和DataLoader的核心源码**
 
@@ -350,10 +339,6 @@ print(type(ds_data))
 
 
 
-```python
-
-```
-
 **2，根据图片目录创建图片数据集**
 
 
@@ -381,8 +366,6 @@ img
 
 
     
-![png](output_34_0.png)
-    
 
 
 
@@ -395,8 +378,7 @@ transforms.RandomVerticalFlip()(img)
 
 
 
-    
-![png](output_35_0.png)
+
     
 
 
@@ -408,10 +390,6 @@ transforms.RandomRotation(45)(img)
 ```
 
 
-
-
-    
-![png](output_36_0.png)
     
 
 
@@ -469,15 +447,6 @@ for features,labels in dl_train:
     torch.Size([50, 1])
 
 
-
-```python
-
-```
-
-
-```python
-
-```
 
 **3，创建自定义数据集**
 
