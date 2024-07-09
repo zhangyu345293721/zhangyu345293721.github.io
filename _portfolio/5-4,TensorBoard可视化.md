@@ -65,7 +65,6 @@ Pytorch中利用TensorBoard可视化的大概过程如下：
 
 * 可视化超参调整
 
-可以说非常方便哦。😋😋 
 
 
 
@@ -83,9 +82,6 @@ print("torchkeras.__version__="+torchkeras.__version__)
 
 
 
-```python
-
-```
 
 ## 一，可视化模型结构
 
@@ -209,9 +205,6 @@ notebook.start("--logdir ./data/tensorboard")
 ```
 
 
-```python
-
-```
 
 ## 二，可视化指标变化
 
@@ -258,9 +251,6 @@ print("y=",f(x).data,";","x=",x.data)
 
 
 
-```python
-
-```
 
 ## 三，可视化参数分布
 
@@ -290,9 +280,6 @@ writer.close()
 ```
 
 
-```python
-
-```
 
 ## 四，可视化原始图像
 
@@ -361,9 +348,6 @@ writer.close()
 
 
 
-```python
-
-```
 
 ## 五，可视化人工绘图
 
@@ -423,8 +407,6 @@ plt.show()
 
 
     
-![svg](output_30_0.svg)
-    
 
 
 
@@ -435,9 +417,6 @@ writer.close()
 ```
 
 
-```python
-
-```
 
 ## 六，torchkeras中的TensorBoard回调函数
 
@@ -499,10 +478,6 @@ plt.legend(["positive","negative"]);
 ```
 
 
-    
-![svg](output_37_0.svg)
-    
-
 
 
 ```python
@@ -523,9 +498,6 @@ print(labels.shape)
 
 
 
-```python
-
-```
 
 ### 2，定义模型
 
@@ -588,9 +560,6 @@ summary(model,input_data=features);
 
 
 
-```python
-
-```
 
 ### 3，训练模型
 
@@ -624,7 +593,6 @@ model.fit( train_data=dl_train,
 
 
     
-![svg](output_45_1.svg)
     
 
 
@@ -800,9 +768,6 @@ model.fit( train_data=dl_train,
 
 
 
-```python
-
-```
 
 ### 4, TensorBoard可视化监控
 
