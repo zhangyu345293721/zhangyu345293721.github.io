@@ -1,5 +1,5 @@
 ---
-title: "XGBoost: A Scalable Tree Boosting System"
+title: "XGBoost: A Scalable Tree Boosting System-笔记"
 collection: talks
 permalink: /talks/XGBoost-A Scalable Tree Boosting System
 excerpt: '提升树是一种高效且被广泛使用的机器学习方法。在本文中，我们描述了一个可扩展的端对端的提升树系统，叫做XGBoost，该系统被数据科学家广泛使用，在许多机器学习任务中取得了显著效果。针对稀疏数据，我们提出一种新的稀疏数据感知算法。我们也提出了分布式加权分位数草图来近似实现树模型的学习。更重要的是，我们陈述了缓存访问模式、数据压缩和分片的见解以构建可扩展的提升树系统。通过结合这些知识，XGBoost可以使用比现有系统少得多的资源就能够扩展数十亿的实例。'
