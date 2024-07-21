@@ -35,6 +35,6 @@ redirect_from:
 - 2020年7月6日，获得MooC证书
 - 2020年9月24，获得极客时间畅销专栏《数据结构与算法之美》结业证书
 - 2021年4月7日，GeekPlus第二届黑客马拉松一等奖
-- 2021年8月16日，咕咚跑步APP，有记录的跑路记录突破1500km
+- 2021年8月16日，[咕咚跑步](https://zhangyumvp.cn/images/gudong.jpg)APP，有记录的跑路记录突破1500km
 - 2024年2月2日，Apple vision pro 纽约首发，成为vision pro第一批用户; 第一个通过vision pro打开叮咚买菜并完成下单的用户
   
