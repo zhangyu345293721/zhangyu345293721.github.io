@@ -17,7 +17,7 @@ date: 2018-11-04
 > Transformer是一种仅使用attention机制、encoder-decoder架构的神经网络，最初应用于NLP领域的机器翻译，后逐渐在语音、CV、时间序列分析等多个领域成为主流深度模型。
 <br/>
 
-<img src='/images/ft_1.png' width="600"><br/>
+<img src='/images/ft_transformer.png' width="600"><br/>
 
 
 ## 二. 模型结构
