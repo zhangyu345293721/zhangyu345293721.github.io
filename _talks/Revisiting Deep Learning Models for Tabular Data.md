@@ -3,7 +3,7 @@ title: "Revisiting Deep Learning Models for Tabular Data - 论文阅读"
 collection: talks
 permalink: /talks/Revisiting Deep Learning Models for Tabular Data
 excerpt: '现有的关于表格数据深度学习的文献提出了各种新颖的架构，并在多个数据集上报告了竞争性的结果。然而，这些模型通常没有被适当地相互比较，并且现有的研究通常使用不同的基准和实验协议。因此，对于研究人员和实践者来说，哪个模型表现最佳尚不清楚。'
-date: 2023-08-04
+date: 2023-12-04
 ---
 
 
