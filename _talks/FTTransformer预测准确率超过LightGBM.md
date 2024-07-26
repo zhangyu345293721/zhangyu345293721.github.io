@@ -79,9 +79,6 @@ dftest[target_col] = encoder.transform(
 ```
 
 
-
-```
-
 dfdata.shape =  (581012, 13) </br>
 target_col =  Cover_Type  </br>
 cat_cols =  ['Wilderness_Area', 'Soil_Type']  </br>
