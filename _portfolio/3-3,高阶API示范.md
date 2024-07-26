@@ -89,8 +89,6 @@ plt.show()
 
 
     
-![svg](output_8_0.svg)
-    
 
 
 
@@ -106,9 +104,6 @@ features,labels = next(iter(dl_train))
 ```
 
 
-```python
-
-```
 
 **2，定义模型**
 
@@ -150,9 +145,6 @@ summary(net,input_data=features);
 
 
 
-```python
-
-```
 
 **3，训练模型**
 
@@ -183,7 +175,6 @@ dfhistory = model.fit(train_data=dl_train,
 
 
     
-![svg](output_16_1.svg)
     
 
 
@@ -253,7 +244,6 @@ plt.show()
 
 
     
-![svg](output_17_0.svg)
     
 
 
@@ -362,9 +352,6 @@ model.evaluate(dl_val)
 
 
 
-```python
-
-```
 
 **5，使用模型**
 
@@ -388,9 +375,6 @@ print(result[:10])
 
 
 
-```python
-
-```
 
 ### 二，DNN二分类模型
 
@@ -439,9 +423,7 @@ plt.legend(["positive","negative"]);
 ```
 
 
-    
-![svg](output_27_0.svg)
-    
+        
 
 
 
@@ -457,9 +439,6 @@ for features,labels in dl_train:
 ```
 
 
-```python
-
-```
 
 **2，定义模型**
 
@@ -521,9 +500,6 @@ summary(net,input_data=features);
 
 
 
-```python
-
-```
 
 **3，训练模型**
 
@@ -545,9 +521,7 @@ dfhistory = model.fit(
 
 
 
-    
-![svg](output_35_1.svg)
-    
+        
 
 
 
@@ -586,9 +560,6 @@ dfhistory = model.fit(
 
 
 
-```python
-
-```
 
 
 ```python
@@ -611,7 +582,6 @@ ax2.set_title("y_pred");
 
 
     
-![svg](output_37_0.svg)
     
 
 
