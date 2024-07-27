@@ -24,7 +24,7 @@ redirect_from:
 - 爱好技术，Github开源社区贡献者
 - 爱好旅游，喜欢社交，喜欢和不同的人交流
 
-### 时间线
+### 个人时间线
 
 - 2014年1月4日，第一次参加[厦门国际马拉松](https://zhangyumvp.cn/images/xiamen_mls.jpg)，跑完半程；2015年1月3日，第一次完成全程[厦门马拉松](https://zhangyumvp.cn/images/mls.jpg)，耗时4个半小时
 - 2014年3月20日，第一次参加上海马拉松，并完成[上海全程马拉松](https://zhangyumvp.cn/images/shanghai_mls.jpg)
