@@ -1,7 +1,7 @@
 # main links links
 main:
 
-  - title: "时间序列预测模型"
+  - title: "预测模型"
     url: /teaching/    
 
   - title: "基础-Pytorch"
@@ -10,10 +10,10 @@ main:
   - title: "基础-Pyspark"
     url: /publications/
     
-  - title: "时间序列预测-论文阅读"
+  - title: "论文阅读"
     url: /talks/
   
 
-  - title: "时间序列预测-前沿论文"
+  - title: "相关前沿论文"
     url: /markdown/
   
