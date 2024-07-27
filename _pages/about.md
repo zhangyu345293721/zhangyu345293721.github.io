@@ -30,12 +30,14 @@ redirect_from:
 - 2014年3月20日，第一次参加上海马拉松，并完成[上海全程马拉松](https://zhangyumvp.cn/images/shanghai_mls.jpg)
 - 2015年6月4号，代表吴晓波武汉书友会，去深圳与其交流，请教经验
 - 2016年6月16日，成为[长江商学院跑团成员](https://zhangyumvp.cn/images/changjiang.jpg)，助力长江商学院爱心跑步公益事业
+- 2016年9月15日，获得<<从大爆炸到暗能量>>[MooC证书](https://zhangyumvp.cn/images/mooc.jpg)
 - 2019年1月6日，创建流浪狗领养平台，已经帮助57条丢失的流浪狗，找到主人，并获得无锡动物协会奖章
 - 2020年2月2日，参加[TED-外推-黄埔主题](https://zhangyumvp.cn/images/ted.jpg)演讲，并跟大V们共进晚餐
-- 2020年7月6日，获得<<从大爆炸到暗能量>>[MooC证书](https://zhangyumvp.cn/images/mooc.jpg)
 - 2020年9月24，获得极客时间畅销专栏《[数据结构与算法之美](https://zhangyumvp.cn/images/shuju_1.jpg)》结业证书
 - 2021年4月7日，GeekPlus第二届黑客马拉松一等奖
 - 2021年8月16日，[咕咚跑步](https://zhangyumvp.cn/images/gudong.jpg)APP，有记录的跑路记录突破1500km
-- 2024年5月12日，开源项目[Pytorh框架类Keras模版](https://github.com/zhangyu345293721)工具开发者和维护者，已经获得1500 star
+- 2023年7月28日，工作积极进取，成绩优异，[叮咚买菜2023年Q2NB青年](https://zhangyumvp.cn/images/didong_e_1.png))
+- 2023年7月28日，工作积极进取，成绩优异，[叮咚买菜2023年Q3NB青年](https://zhangyumvp.cn/images/didong_e_2.png))
+- 2023年12月08日，开源项目[Pytorh框架类Keras模版](https://github.com/zhangyu345293721)工具开发者和维护者，已经获得1500 star
 - 2024年2月2日，Apple vision pro 纽约首发，成为vision pro第一批用户; 第一个通过vision pro打开叮咚买菜并完成下单的用户
   
