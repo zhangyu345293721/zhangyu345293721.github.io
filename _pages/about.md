@@ -37,7 +37,7 @@ redirect_from:
 - 2021年4月7日，GeekPlus第二届黑客马拉松一等奖
 - 2021年8月16日，[咕咚跑步](https://zhangyumvp.cn/images/gudong.jpg)APP，有记录的跑路记录突破1500km
 - 2023年7月28日，工作积极进取，成绩优异，[叮咚买菜2023年Q2NB青年](https://zhangyumvp.cn/images/didong_e_1.png))
-- 2023年7月28日，工作积极进取，成绩优异，[叮咚买菜2023年Q3NB青年](https://zhangyumvp.cn/images/didong_e_2.png))
+- 2023年10月26日，工作积极进取，成绩优异，[叮咚买菜2023年Q3NB青年](https://zhangyumvp.cn/images/didong_e_2.png))
 - 2023年12月08日，开源项目[Pytorh框架类Keras模版](https://github.com/zhangyu345293721)工具开发者和维护者，已经获得1500 star
 - 2024年2月2日，Apple vision pro 纽约首发，成为vision pro第一批用户; 第一个通过vision pro打开叮咚买菜并完成下单的用户
   
