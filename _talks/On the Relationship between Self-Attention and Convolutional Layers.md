@@ -35,11 +35,11 @@ Transformer在NLP领域大放异彩，基于Transformer的无监督模型，如G
 其中A表示注意力矩阵，维度为TxT每一个元素代表的是注意力分数，为了简化说明本文省略了残差连接、BN和常量。<br/>
 自注意力的一个关键特点是未知不变的即如果将输入打乱依旧会得到同样的注意力输出结果；当任务中事物的顺序对结果有影响时自注意力就会出问题；为了减轻这一限制，会使用位置嵌入来为每个像素编码位置信息，并在自注意力计算之前将位置信息添加到token中：
 
-<img src='/images/ft_cnn_2.png'>
+<img src='/images/tf_cnn_2.png'>
 
 P可以是任意能够表征位置信息的函数。在时间中还发现，使用多个注意力头是右移的，因为每个头可以通过使用不同的K-V-V来关注输入的不同部分，多头注意力表示为：
 
-<img src='/images/ft_cnn_3.png'>
+<img src='/images/tf_cnn_3.png'>
 
 多了两个参数：projection matrixWout和偏执项bout。
 
@@ -47,7 +47,7 @@ P可以是任意能够表征位置信息的函数。在时间中还发现，使�
 
 目前卷积依旧是图像任务的首选基础操作，回顾一下卷积操作：
 
-<img src='/images/ft_cnn_4.png'>
+<img src='/images/tf_cnn_4.png'>
 
 主要就是学习权重矩阵和偏置项接下来探讨注意力如何从1D序列迁移到2D图像。此时输入不再是单词而是维度为WxHxD的张量，每一个k-q计算得到注意力分数，使用p=(i,j)表示位置在(i,j)处的注意力输出。
 
@@ -56,17 +56,17 @@ P可以是任意能够表征位置信息的函数。在时间中还发现，使�
 
 在基于Transformer的框架中目前有两种位置编码方案：绝对位置编码和相对位置编码。<br/>
 绝对位置编码会计算一个固定的或者可学习的向量p分配给每个像素点，然后在继续计算注意力分数。
-<img src='/images/ft_cnn_5.png'>
+<img src='/images/tf_cnn_5.png'>
 
 相对位置编码主要计算的是当前像素和其他像素之间的相对位置差异，并不是绝对位置。可以看到注意力分数只取决于二者的位移。
 
-<img src='/images/ft_cnn_6.png'>
+<img src='/images/tf_cnn_6.png'>
 
 ### Section III Self-Attention as a Convolutional Layer
 
 本节主要推导多头注意力可以表示卷积层的充分条件。<br/>
 
-<img src='/images/ft_cnn_7.png'>
+<img src='/images/tf_cnn_7.png'>
 
 
 定理1：具有Nh个头，每个头维度为Dn的多头注意力层加上相对位置编码可以编码任意卷积核大小为根号Nh的卷积层，输出维度为min(Din,Dout)。<br/>
@@ -79,17 +79,17 @@ Dilation:**MHSA可以表示任意空洞卷积，因为每个head学习相对当�
 接下来证明上述定理。<br/>
 引理1：设多头注意力头数为Nh=K^2，f是head到shift的映射，则存在一个MHSA来表示当前KxK大小的卷积，每一个头在q-k范围内softmax后为1，范围之外置零。
 
-<img src='/images/ft_cnn_8.png'>
+<img src='/images/tf_cnn_8.png'>
 
 MHSA的计算公式: <br/>
 
-<img src='/images/ft_cnn_9.png'>
+<img src='/images/tf_cnn_9.png'>
 
 需要学习的就是每一个注意力头的范围和各自的权重Wval将每一个头的权重矩阵加和起来 就是对当前query的输出。在Transformer模型中一般Dn = Dout、Nh 那么每个head的权重秩为Dout-Dn,这样不足以表征Dout个通道的卷积层，因此本文规定能表示的卷积层的通道数为min(Dn,Dout) ,并且在实际操作中本文建议将head级联起来而不是在Dout个通道中分head。 <br/>
 
 引理2：存在一种相对编码方案使得每个位置存在一种相对编码方案，使得按照这种方案编码后的结果和 一样 </br>
 
-<img src='/images/ft_cnn_10.png'>
+<img src='/images/tf_cnn_10.png'>
 
 
 δ=k-q也就是query和key之间的相对距离，那么表示为存在一个合适的位移使得注意力分数达到最大值-αc,α系数主要用来调控Aq与∆和其他注意力分数之间的差异。
@@ -102,7 +102,7 @@ MHSA的计算公式: <br/>
 数据集 CIFAR-10,ImageNet <br/>
 对比网络ResNet <br/>
 
-<img src='/images/ft_cnn_11.png'>
+<img src='/images/tf_cnn_11.png'>
 
 为了验证本文的自注意力模型的性能，Table 1展示了在CIFAR-10上的模型精度和模型尺寸。从Fig2可以看到ResNet收敛的会更快，但是不能确定是因为架构还是人工调参的产物。本文的优势可以利用高斯分布的局部注意力来减少失误的次数。此外还发现基于内容的注意力学习嵌入更难训练，可能和参数增加也有关。
 
@@ -110,11 +110,11 @@ MHSA的计算公式: <br/>
 
 首先验证的就是在Equation(9)中使用相对位置编码 本文设置head_number=9 这样可以表示3x3的卷积大小。每个head的注意力中心按∆ (h) ∼ N(0, 2I 2 )初始化。
 
-<img src='/images/ft_cnn_12.png'>
+<img src='/images/tf_cnn_12.png'>
 
 Fig 3展示了第四层不同的head在训练过程中的位置变化，可以看到随着优化进行，head逐渐定位到图像的特性像素位置上，在query周围星星一个网格。这样就证实了自注意力用于图像可以学习像卷积一样的行为。
 
-<img src='/images/ft_cnn_13.png'>
+<img src='/images/tf_cnn_13.png'>
 
 Fig 4展示了每一层的注意力头训练结束后的位置。可以看到浅层次主要关注局部模式，深层次的head会定位到距离query更远的位置来关注更大的模式。并且有趣的是这些head互相并不冲突，似乎会逐渐以一种最大限度覆盖图像的空间策略来安排。
 
@@ -123,12 +123,12 @@ Fig 4展示了每一层的注意力头训练结束后的位置。可以看到浅
 接下来研究使用相对位置编码的影响，分别学习关于当前query行上的偏移和列上的偏移。首先本文不使用输入数据计算内容，单独计算注意力分数，得到每一层每个head的注意力概率，参见Fig 5，可以看到有的head会关注单独的像素点，这与引理1的提哦啊见相吻合；其他的注意力则会关注一些水平对称但非局部的模式，或者一些长距离像素之间的依赖关系。
 
 
-<img src='/images/ft_cnn_14.png'>
+<img src='/images/tf_cnn_14.png'>
 
 然后是使用相对位置编码和基于内容的嵌入，得到的注意力概率分布展示在Fig 6.本文计算的是平均了100张测试图上的注意力概率，来勾勒出每个head的焦点，并消除了对输入图像的依赖，从layer2-3可以看出：有的head可以关注到query像素附近的区域，类似卷积的局部感受野。其他的head则关注基于内容的注意力。
 当query像素在图像上滑动时，就能看出卷积和注意力之间的相似性了：
 
-<img src='/images/ft_cnn_15.png'>
+<img src='/images/tf_cnn_15.png'>
 
 从Fig6中可以看到会随着query pixel进行局部查询，这样就实现了卷积的局部感受野特征提取操作。也可以参考附录的Fig 7能看的更清楚，可以帮助我们更好的理解MHSA是怎样处理图像的。
 
@@ -147,13 +147,13 @@ Fig 4展示了每一层的注意力头训练结束后的位置。可以看到浅
 Content-based Attention <br/>
 Fig 7展示了query滑动下的平移不变洗，Fig 8-10展示的是单个图像下的注意力。
 
-<img src='/images/ft_cnn_16.png'>
+<img src='/images/tf_cnn_16.png'>
 
-<img src='/images/ft_cnn_17.png'>
+<img src='/images/tf_cnn_17.png'>
 
-<img src='/images/ft_cnn_18.png'>
+<img src='/images/tf_cnn_18.png'>
 
-<img src='/images/ft_cnn_19.png'>
+<img src='/images/tf_cnn_19.png'>
 
 
 
