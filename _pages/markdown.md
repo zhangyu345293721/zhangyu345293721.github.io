@@ -20,5 +20,7 @@ redirect_from:
  * [TEMPO: PROMPT-BASED GENERATIVE PRE-TRAINED TRANSFORMER FOR TIME SERIES FORECASTING](http://arxiv.org/pdf/2310.04948v2.pdf)
  * [Modality-aware Transformer for Time series Forecasting](http://arxiv.org/pdf/2310.01232v1.pdf)
  * [PATCHMIXER: A PATCH-MIXING ARCHITECTURE FOR LONG-TERM TIME SERIES FORECASTING](http://arxiv.org/pdf/2310.00655v1.pdf)
+ * [On the Relationship between Self-Attention and Convolutional Layers](http://arxiv.org/pdf/2310.00655v1.pdf)
+
 
 
