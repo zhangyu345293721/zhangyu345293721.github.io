@@ -3,7 +3,7 @@ title: "A decoder-only foundation model for time-series forecasting-论文阅读
 collection: talks
 permalink: /talks/A decoder-only foundation model for time-series forecasting
 excerpt: '该工作提出了一种time series foundation model，名为TimesFM。该工作的关键在于构建了一个时间序列预测数据集，该数据集由Google trends, Wiki Pageviews和合成数据组成。TimesFM的性能上略微优胜llmtime，也优胜了traditional methods。'
-date: 2024-05-14
+date: 2024-06-14
 ---
 
 ## 工作简要
