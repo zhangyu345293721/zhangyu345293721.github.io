@@ -17,7 +17,7 @@ date: 2018-11-04
 > Transformer是一种仅使用attention机制、encoder-decoder架构的神经网络，最初应用于NLP领域的机器翻译，后逐渐在语音、CV、时间序列分析等多个领域成为主流深度模型。
 <br/>
 
-<img src='/images/ft_1.png' width="600"><br/>
+<img src='/images/tf_1.png' width="600"><br/>
 
 
 ## 二. 模型结构
@@ -30,14 +30,14 @@ Encoder：由N层自注意力块叠加而成，每个模块由多头自注意力
 
 Decoder：由N层自注意力块叠加而成，每个模块由掩码多头注意力模块 masked multi-head attention、残差模块、Layer Normalization、交叉注意力 cross attention以及前馈神经网络组成。
 
-<img src='/images/ft_2.png' width="600"><br/>
+<img src='/images/tf_2.png' width="600"><br/>
 
 
 ### 2.2 位置编码 Position Encoding
 
 Attention机制不像CNN/RNN一样对输入顺序敏感，Attention是顺序不敏感的。为了使Attention能够感受到顺序的变化，Transformer引入了Position Encoding。
 
-<img src='/images/ft_3.png' width="600"><br/>
+<img src='/images/tf_3.png' width="600"><br/>
 
 
 Position Encoding为什么是正余弦函数的形式？如何对位置进行编码？
@@ -70,19 +70,19 @@ Attention机制可以描述为查表的过程，将各个时间步的输入映�
 
 Transformer中Dot-product Attention还需乘以缩放因子1/sqrt(d_k)，为了避免softmax函数落入梯度饱和区.
 
-<img src='/images/ft_4.png' width="600"><br/>
+<img src='/images/tf_4.png' width="600"><br/>
 
-<img src='/images/ft_5.png' width="600"><br/>
+<img src='/images/tf_5.png' width="600"><br/>
 
 
 #### 2.3.2 Multi-head Attention
 Multi-head Attention将query、key、value映射到多个不同的子空间内，在多个子空间进行attention后，最后拼接起来
 
-映射参数: <img src='/images/ft_6.png' width="600"><br/>
+映射参数: <img src='/images/tf_6.png' width="600"><br/>
 
-<img src='/images/ft_7.png' width="600"><br/>
+<img src='/images/tf_7.png' width="600"><br/>
 
-<img src='/images/ft_8.png' width="600"><br/>
+<img src='/images/tf_8.png' width="600"><br/>
 
 
 
@@ -91,14 +91,14 @@ Multi-head Attention将query、key、value映射到多个不同的子空间内�
 在 Transformer中，解码器的self-Attention和编码器中的不同，解码器采用了Masked Attention。Masked Attention保证了解码器只能注意到当前位置之前的信息，保证了自回归性。
 
 编码器是对已知输入序列进行编码，因此没有采用masked attention，可以注意到当前位置前后各个位置的信息。
-<img src='/images/ft_9.png' width="600"><br/>
+<img src='/images/tf_9.png' width="600"><br/>
 
 
 #### 2.3.4 Cross Attention
 Self-Attention输入是一个单一的嵌入序列，源序列；
 
 Cross-Attention将两个相同维度的独立嵌入序列组合在一起，源序列和目标序列，目标序列用作查询输入，源序列作为键和值输入。
-<img src='/images/ft_10.png' width="600"><br/>
+<img src='/images/tf_10.png' width="600"><br/>
 
 
 Transformer解码器从完整的输入序列开始，但解码序列为空。cross attention将信息从输入序列引入解码器，以便它可以预测下一个输出序列标记。然后，解码器将预测值添加到输出序列中，并重复此自回归过程
@@ -107,7 +107,7 @@ Transformer解码器从完整的输入序列开始，但解码序列为空。cro
 ### 2.4 Position-wise Feed Forward Network
 两层全连接层，独立应用在每个位置上，参数在每个位置共享。类似kernel大小为1的一维卷积。
 
-<img src='/images/ft_11.png' width="600"><br/>
+<img src='/images/tf_11.png' width="600"><br/>
 
 
 ### 2.5 其他网络结构
