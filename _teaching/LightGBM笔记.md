@@ -3,7 +3,9 @@ title: "LightGBM: A Highly Efficient Gradient Boosting Decision Tree-论文阅�
 collection: talks
 permalink: /teaching/LightGBM笔记
 excerpt: 'LightGBM 由微软提出，主要用于解决 GDBT 在海量数据中遇到的问题，以便其可以更好更快地用于工业实践中'
+value: 苏州市
 date: 2021-10-05
+location: 苏州市
 ---
 
 论文地址：《LightGBM: A Highly Efficient Gradient Boosting Decision Tree》：https://proceedings.neurips.cc/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf <br/>
