@@ -9,7 +9,7 @@ redirect_from:
 
 ### 个人技能
 
-- 熟悉 Java、Python，了解 Rust、Scala 语言
+- 熟悉 Java、Python，了解 Scala 语言
 - 熟练掌握SQL语言，熟悉MySQL、Hive、Spark等大数据技术
 - 熟悉 LightGBM、Sklearn 等机器学习框架，Pytorch、Keras 等深度学习库
 - 熟悉系统搭建与改造, 具备一定工程化能力
