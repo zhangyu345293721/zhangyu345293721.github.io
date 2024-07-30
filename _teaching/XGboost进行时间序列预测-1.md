@@ -1,8 +1,8 @@
 ---
 title: "XGboost进行时间序列预测"
-collection: talks
+collection: teaching
 type: "Xgboost专栏"
-permalink: /talks/XGboost进行时间序列预测-1
+permalink: /teaching/XGboost进行时间序列预测-1
 date: 2023-03-01
 location: "上海市"
 ---

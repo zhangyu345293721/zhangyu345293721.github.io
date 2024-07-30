@@ -1,8 +1,8 @@
 ---
 title: "XGboost回归模型核心介绍"
-collection: talks
+collection: teaching
 type: "Talk"
-permalink: /talks/XGboost回归模型核心介绍-2
+permalink: /teaching/XGboost回归模型核心介绍-2
 date: 2024-02-01
 location: "上海市"
 ---

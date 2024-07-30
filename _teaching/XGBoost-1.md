@@ -1,8 +1,8 @@
 ---
 title: "XGBoost基础介绍1"
-collection: talks
+collection: teaching
 type: "Xgboost专题"
-permalink: /talks/XGBoost-1
+permalink: /teaching/XGBoost-1
 date: 2023-03-16
 location: "上海市"
 ---

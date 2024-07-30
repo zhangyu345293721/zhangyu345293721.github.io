@@ -1,8 +1,8 @@
 ---
 title: "XGBoost算法原理介绍2"
-collection: talks
+collection: teaching
 type: "Xgboost专题"
-permalink: /talks/XGBoost-2
+permalink: /teaching/XGBoost-2
 date: 2023-03-20
 location: "上海市"
 ---

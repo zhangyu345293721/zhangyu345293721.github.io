@@ -1,8 +1,8 @@
 ---
 title: "Xgboost原理介绍"
-collection: talks
+collection: teaching
 type: "Xgboost专栏"
-permalink: /talks/Xgboost原理介绍k-3
+permalink: /teaching/Xgboost原理介绍k-3
 date: 2024-03-05
 location: "上海市"
 ---
