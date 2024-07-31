@@ -1,5 +1,5 @@
 ---
-title: "FTTransformer预测准确率超过LightGBM"
+title: "FTTransformer预测准确率超过LightGBM-论文阅读"
 collection: talks
 permalink: /talks/FTTransformer预测准确率超过LightGBM
 excerpt: 'FTTransformer是一个可以用于结构化(tabular)数据的分类和回归任务的模型。
