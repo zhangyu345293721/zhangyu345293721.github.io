@@ -8,7 +8,7 @@ date: 2024-06-10
 
 
 
-论文： 一种对时间序列预测有效预测模型itransformer
+论文： 一种对时间序列预测有效预测模型itransformer  <br/>
 论文地址：https://arxiv.org/pdf/2310.06625
 
 
