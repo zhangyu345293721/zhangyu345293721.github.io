@@ -5,6 +5,7 @@ type: "Xgboost专题"
 permalink: /teaching/XGBoost基础-1
 date: 2023-03-02
 location: "上海市"
+venue: "上海市"
 ---
 
 XGBoost 最初是由 Tianqi Chen 作为分布式（深度）机器学习社区（DMLC）组的一部分的一个研究项目开始的。XGBoost后来成为了Kaggle竞赛传奇——在2015年的時候29个Kaggle冠军队伍中有17队在他们的解决方案中使用了XGboost。
