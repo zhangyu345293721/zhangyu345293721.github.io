@@ -5,6 +5,7 @@ type: "Xgboost专栏"
 permalink: /teaching/Xgboost原理介绍k-3
 date: 2024-03-05
 location: "上海市"
+venue: "上海市"
 ---
 
 本文不讲如何使用 XGBoost 也不讲如何调参，主要会讲一下作为 GBDT 中的一种，XGBoost 的原理与相关公式推导。为了循序渐进的理解，读者可先从简单的回归树再到提升树再来看本文。我们现在直接从 XGBoost 的目标函数讲起。
