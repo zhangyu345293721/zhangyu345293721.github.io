@@ -14,7 +14,7 @@ XGBoost 最初是由 Tianqi Chen 作为分布式（深度）机器学习社区�
 
 1. 概览 XGBoost
 2. 特征重要性
-3. 建筑模型
+3. 构建模型
 
 ### 概览 XGBoost
 
