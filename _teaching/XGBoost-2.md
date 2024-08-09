@@ -5,6 +5,7 @@ type: "Xgboost专题"
 permalink: /teaching/XGBoost-2
 date: 2023-03-20
 location: "上海市"
+venue: "上海市"
 ---
 
 
