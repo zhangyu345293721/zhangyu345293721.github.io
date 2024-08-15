@@ -9,6 +9,7 @@ redirect_from:
 
 ### 兴趣爱好
 
+- 宠物爱好者，无锡市小动物保护协会成员
 - 马拉松爱好者，曾经跑过上海、广州、厦门、深圳和长沙马拉松
 - 象棋二级棋手，武汉象棋协会成员
 - 爱好技术，Github开源社区贡献者
@@ -16,11 +17,13 @@ redirect_from:
 
 ### 个人时间线
 
-- 2014年1月4日，第一次参加[厦门国际马拉松](https://zhangyumvp.cn/images/xiamen_mls.jpg)，跑完半程；2015年1月3日，第一次完成全程[厦门马拉松](https://zhangyumvp.cn/images/mls.jpg)，耗时4个半小时
+- 2014年1月4日，第一次参加[厦门国际马拉松](https://zhangyumvp.cn/images/xiamen_mls.jpg) 半程
 - 2014年3月20日，第一次参加上海马拉松，并完成[上海全程马拉松](https://zhangyumvp.cn/images/shanghai_mls.jpg)
+- 2015年1月3日，第一次完成全程[厦门马拉松](https://zhangyumvp.cn/images/mls.jpg)
 - 2015年6月4号，代表吴晓波武汉书友会，去深圳与其交流，请教经验
 - 2016年6月16日，成为[长江商学院跑团成员](https://zhangyumvp.cn/images/changjiang.jpg)，助力长江商学院爱心跑步公益事业
-- 2016年9月15日，获得<<从大爆炸到暗能量>>[MooC证书](https://zhangyumvp.cn/images/mooc.jpg)<!--- 2019年1月6日，创建流浪狗领养平台，已经帮助32条丢失的流浪狗，找到主人，并获得无锡动物协会奖章-->
+- 2016年9月15日，获得<<从大爆炸到暗能量>>[MooC证书](https://zhangyumvp.cn/images/mooc.jpg)
+- 2019年1月6日，创建流浪狗领养平台，已经帮助32条流浪狗，找到主人，并获得无锡小动物协会奖章
 - 2020年2月2日，参加[TED-外推-黄埔主题](https://zhangyumvp.cn/images/ted.jpg)演讲，并跟大V们共进晚餐
 - 2020年9月24，获得极客时间畅销专栏《[数据结构与算法之美](https://zhangyumvp.cn/images/shuju_1.jpg)》结业证书
 - 2021年4月7日，GeekPlus第二届黑客马拉松一等奖
