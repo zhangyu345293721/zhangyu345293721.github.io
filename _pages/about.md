@@ -31,6 +31,6 @@ redirect_from:
 - 2022年3月18日，开源项目[Pytorch学习教程](https://github.com/zhangyu345293721)编写者之一，目前已经获得5000+ star
 - 2023年7月28日，[叮咚买菜2023年Q2NB青年](https://zhangyumvp.cn/images/didong_e_1.jpg)
 - 2023年10月26日，[叮咚买菜2023年Q3NB青年](https://zhangyumvp.cn/images/didong_e_3.jpg)
-- 2023年12月8日，开源项目[Pytorh框架类Keras模版](https://github.com/zhangyu345293721)工具开发者和维护者，已经获得1500 star
+- 2023年12月8日，开源项目[Pytorh框架类Keras模版](https://github.com/zhangyu345293721)工具开发者和维护者，已经获得1500+ star
 - 2024年2月12日，Apple vision pro 纽约首发，成为vision pro第一批用户; 第一个通过vision pro打开叮咚买菜并完成下单的用户
   
