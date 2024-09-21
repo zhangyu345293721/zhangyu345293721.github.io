@@ -1,5 +1,5 @@
 ---
-title: PatchTST:A Time Series is Worth 64 Words: Long-term Forecasting with Transformers
+title: PatchTST:A Time Series is Worth 64 Words Long-term Forecasting with Transformers
 collection: talks
 permalink: /talks/PatchTST:A Time Series is Worth 64 Words: Long-term Forecasting with Transformers
 excerpt: 这篇是2023年ICLR的文章，提出了一种有效的多元时间序列预测和自监督表示学习模型 PatchTST，主要是基于Transformer做了以下两点改进
