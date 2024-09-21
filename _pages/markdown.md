@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "待阅读-时间序列预测"
+title: "时间序列预测阅读"
 author_profile: true
 redirect_from: 
   - /md/
