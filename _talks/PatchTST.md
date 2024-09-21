@@ -29,7 +29,7 @@ date: 2024-07-12
 - 2、通道独立性：以多变量时间序列为例，每个通道包含一个单变量时间序列，共享相同的嵌入和权重。
 （据说是因为前年很火的线性模型DLinear原文中对Transformer类模型进行时间序列预测提出的质疑，该文做出了回答并改进，最后使得基于Transformer的PatchTST模型在长期预测上效果超过线性模型DLinear。）
 
-<img src='/images/tst_1.png'>
+<img src='/images/tst.png'>
 
 
 ## Patch
