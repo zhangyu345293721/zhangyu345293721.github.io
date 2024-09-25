@@ -1,7 +1,7 @@
 ---
 title: "XGboost回归模型核心介绍"
 collection: teaching
-type: "Talk"
+type: "Xgboost专栏"
 permalink: /teaching/XGboost回归模型核心介绍-2
 date: 2024-02-01
 location: "上海市"
