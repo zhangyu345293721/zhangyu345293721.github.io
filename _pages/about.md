@@ -25,6 +25,7 @@ redirect_from:
 - 2016年9月15日，获得<<从大爆炸到暗能量>>[MooC证书](https://zhangyumvp.cn/images/mooc.jpg)
 - 2019年1月6日，创建流浪狗领养平台，已经帮助32条流浪狗，找到主人，并获得无锡小动物协会奖章
 - 2020年2月2日，参加[TED-外推-黄埔主题](https://zhangyumvp.cn/images/ted.jpg)演讲，并跟大V们共进晚餐
+- --- 机器人
 - 2020年9月24，获得极客时间畅销专栏《[数据结构与算法之美](https://zhangyumvp.cn/images/shuju_1.jpg)》结业证书
 - 2021年4月7日，GeekPlus第二届[黑客马拉松](https://zhangyumvp.cn/images/prize.jpg)一等奖
 - 2021年8月16日，[咕咚跑步](https://zhangyumvp.cn/images/gudong.jpg)APP，有记录的跑路记录突破1500km
