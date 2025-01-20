@@ -159,9 +159,7 @@ Deepseek的FP8训练里，它保持了较精确的数值。全程使用了e4m3�
 
 <img src='/images/deep_16.png'>
 
-
 <img src='/images/deep_17.png'>
-
 
 <img src='/images/deep_18.png'>
 
