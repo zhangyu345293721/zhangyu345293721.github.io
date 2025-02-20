@@ -3,7 +3,7 @@ title: "QLORA: Efficient Finetuning of Quantized LLMs"
 collection: talks
 permalink: /talks/lora
 excerpt: '微调大型语言模型（LLMs）是提高性能和调整行为的有效方法。然而，对于非常大的模型来说，微调成本非常高昂，需要大量的GPU内存。传统的量化方法虽然可以减小模型的内存占用，但只适用于推理阶段，无法在训练过程中有效减少内存需求，这对于大型模型的微调构成了严重的限制。因此，当前研究面临着在保持性能的同时降低微调过程中的内存需求的挑战。'
-date: 2025-01-31
+date: 2025-02-08
 ---
 
 
