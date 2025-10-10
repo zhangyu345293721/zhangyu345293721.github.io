@@ -3,7 +3,7 @@ title: "iTransformer: Inverted Transformers Are Effective for Time Series Foreca
 collection: talks
 permalink: /talks/iTransformer Inverted Transformers Are Effective for Time Series Forecasting
 excerpt: '近年来，Transformer在自然语言以及计算机视觉领域取得了长足的发展，逐渐成为深度学习的基础模型。在时序分析领域，受益于其强大的序列建模能力与可扩展性，Transformer广泛应用于时序预测，派生出了许多模型改进。'
-date: 2024-06-10
+date: 2025-06-10
 ---
 
 
