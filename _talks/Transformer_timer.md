@@ -1,7 +1,7 @@
 ---
 title: "Timer-XL: Long-Context Transformers for Unified Time Series Forecasting-论文阅读"
 collection: talks
-permalink: /talks/Timer-XL: Long-Context Transformers for Unified Time Series Forecasting
+permalink: /talks/Timer-XLLong-Context Transformers for Unified Time Series Forecasting
 excerpt: 'Transformers 在一些任务中取得了显著的性能，但由于其二次复杂度(相对于输入长度)，对于非常长的序列，它们的速度会非常慢。为了解决这一限制，我们将 self-attention 表示为核特征图的线性点积，并利用矩阵乘积的结合性将复杂度从O(N2) 降低到O(N)，其中N为序列长度。我们展示了这种公式允许迭代实现，极大地加速了自回归Transformers ，并揭示了它们与循环神经网络的关系。我们的线性Transformers 实现了与普通Transformers 相似的性能，并且在非常长的序列的自回归预测方面快了4000倍。'
 date: 2025-08-14
 ---
