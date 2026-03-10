@@ -1,3 +1,13 @@
+---
+title: "MOE（混合专家）大模型技术详解-大模型"
+collection: teaching
+type: "大模型-专栏"
+permalink: /teaching/LightGBM相关知识介绍
+venue: "上海市"
+date: 2026-01-14
+location: "上海市"
+---
+
 # MOE（混合专家）大模型技术详解
 
 ## 目录
