@@ -22,6 +22,9 @@ location: "上海市"
 
 ---
 
+<br/><img src='/images/moe_01.png'>
+
+
 ## 概述
 
 ### 什么是MOE？
