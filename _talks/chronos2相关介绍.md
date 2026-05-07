@@ -1,5 +1,5 @@
 ---
-title: "chronos-2"
+title: "chronos-2的产生背景"
 collection: talks
 permalink: /talks/chronos-2 introduction
 excerpt: 'Amazon科学家开发的Chronos-2是一个革命性的通用时间序列预测模型，能够处理单变量、多变量和协变量预测任务。通过创新的组注意力机制实现零样本预测，在三大基准测试中表现卓越，胜率达90.7%。该模型特别擅长整合外部影响因素，在能源和零售等实际应用中显著提升预测精度，代表了AI预测技术从专用化向通用化发展的重要突破。'
